@@ -175,4 +175,7 @@
         line-height: 26px;
         letter-spacing: 2px;
     }
+    .page_about .list .list_text .list_context p{
+         font-family: PingFangSC, PingFang SC;
+    }
 </style>
