@@ -10,26 +10,26 @@
                     </span>
                     <div class="userInfo">
                         <div class="name">
-                            <input class="userName" type="text" :placeholder="$t('姓名')"  />
+                            <input class="userName" type="text" :placeholder="$t('姓名')" />
                             <input class="userPhone" type="text" :placeholder="$t('电话')" />
                         </div>
                         <input type="email" class="email" :placeholder="$t('邮箱')" />
                         <input type="text" class="remarks" :placeholder="$t('咨询内容')" />
-                        <div class="sumbit">
+                        <div class="sumbit" @click='sumbit'>
                             {{$t("提交")}}
                         </div>
                     </div>
                     <span style="margin-top: 20px;">
                         {{$t('地址')}}：21660 E Copley Drive, Suite 268 Diamond Bar, CA 91765
-                        
+
 
                     </span>
                     <span style="margin-top: 10px;">
                         {{$t('电话')}}：(909) 839-6788
-                        
-                    
+
+
                     </span>
-                    
+
                     <span style="margin-top: 10px;margin-bottom: 20px;">
                         {{$t('官网')}}：www.beyondcenturyllc.com
                     </span>
@@ -55,6 +55,7 @@
         Carousel3d,
         Slide
     } from 'vue-carousel-3d';
+    import axios from "axios";
 
     export default {
         name: 'home',
@@ -80,6 +81,17 @@
                 let nextIndex = this.activeIndex + 1;
                 this.$refs.carousel.goSlide(nextIndex);
             },
+            sumbit() {
+                console.log('sumbit')
+                axios.post('http://localhost:8090/api/userInfo', {
+
+                }).then(() => {
+
+                }).catch(() => {
+
+                });
+
+            }
         },
     }
 </script>
@@ -93,19 +105,22 @@
         margin: 0 auto;
         margin-top: 15px;
     }
-    .userInfo .name{
+
+    .userInfo .name {
         width: 100%;
         display: flex;
-        
+
     }
-    .userInfo .name .userName{
-         width: 188px;
+
+    .userInfo .name .userName {
+        width: 188px;
     }
-    .userInfo .name .userPhone{
+
+    .userInfo .name .userPhone {
         width: 188px;
         margin-left: 15px;
     }
-    
+
     .userInfo input {
         outline: none;
         list-style: none;
@@ -122,18 +137,20 @@
         font-weight: 500;
         color: #BABEC9;
         line-height: 35px;
-        
+
         margin-top: 15px;
     }
+
     .userInfo .email {
         width: 96%;
-        
+
     }
-        
+
     .userInfo .remarks {
         width: 96%;
     }
-    .userInfo .sumbit{
+
+    .userInfo .sumbit {
         width: 300px;
         /* height: 28px; */
         background: #022EA8;
@@ -142,8 +159,8 @@
         margin-top: 40px;
         display: block;
         text-align: center;
-        
-       
+
+
         font-size: 20px;
         font-family: SourceHanSansSC, SourceHanSansSC;
         font-weight: 500;
@@ -152,6 +169,7 @@
         cursor: pointer;
         /* line-height: 28px; */
     }
+
     .contact {
         background-image: url('./../../../assets/img/bg_lighthouse.png');
         background-repeat: no-repeat;

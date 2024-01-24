@@ -4,7 +4,7 @@
         <div class="banner">
             <div class="bannerText">
                 <div>{{$t('关于公司')}}</div>
-                <span>- {{$t('从细节开始 服务好每一个企业')}} -</span>
+                <span>- {{$t('从细节开始')}} -</span>
             </div>
             <div class="bannerSwiper">
                 <carousel-3d ref="carousel" @before-slide-change="onSlideChange" :autoplayTimeout="3000"

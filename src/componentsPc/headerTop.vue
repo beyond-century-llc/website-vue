@@ -6,23 +6,23 @@
             </div>
             <div class="tabbar">
                 <div @click="changePath(1,'Home')">
-                    <p>首页</p>
+                    <p>{{$t('首页')}}</p>
                     <span v-if="routerActive == 1"></span>
                 </div>
                 <div @click="changePath(2,'about')">
-                    <p>关于卓越</p>
+                    <p>{{$t('关于卓越')}}</p>
                     <span v-if="routerActive == 2"></span>
                 </div>
                 <div @click="changePath(3,'server')">
-                    <p>行业经验</p>
+                    <p>{{$t('行业经验')}}</p>
                     <span v-if="routerActive == 3"></span>
                 </div>
                 <div @click="changePath(4,'member')">
-                    <p>主要成员</p>
+                    <p>{{$t('主要成员')}}</p>
                     <span v-if="routerActive == 4"></span>
                 </div>
                 <div @click="changePath(5,'contact')">
-                    <p>联系我们</p>
+                    <p>{{$t('联系我们')}}</p>
                     <span v-if="routerActive == 5"></span>
                 </div>
                 
@@ -36,11 +36,11 @@
                     <span>选择您想阅读的语言</span>
                     <img class="error" @click="showChange=false" src="./../assets/img/icon_error_black.png" alt="" />
                 </div>
-                <div class="changeListc" :class="[active==0?'active':'']" @click="active=0">
+                <div class="changeListc" :class="[active==0?'active':'']"  @click="changeLanguage(0,'en-US')">
                     <span>English</span>
                     <img class="yes" src="./../assets/img/icon_yes_white.png" alt="" />
                 </div>
-                <div class="changeListc" :class="[active==1?'active':'']" @click="active=1">
+                <div class="changeListc" :class="[active==1?'active':'']" @click="changeLanguage(1,'zh-CN')">
                     <span>中文</span>
                     <img class="yes" src="./../assets/img/icon_yes_white.png" alt="" />
                 </div>
@@ -80,6 +80,15 @@
                     this.routerActive = index;
                 })
                 
+            },
+            changeLanguage(index, type){
+                localStorage.setItem('langActive', index)
+                this.active = index
+                this.changeLang = !this.changeLang
+                
+                this.$i18n.locale = type
+            
+                
             }
         }
     }
@@ -106,6 +115,7 @@
         position: absolute;
         right: 0;
         top: 56px;
+        z-index: 9999;
         /* border: 1px solid ; */
     }
 

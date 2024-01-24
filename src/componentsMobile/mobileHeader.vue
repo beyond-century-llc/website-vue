@@ -20,23 +20,23 @@
        
         <div class="tabbar" v-if="showChange">
             <div class="list" :class="[routerActive==0?'active':'']" @click="changePath(0,'mobileHome')" >
-                <p>首页</p>
+                <p>{{$t('首页')}}</p>
                 <img v-if="routerActive==0" src="./../assets/mobile/icon_yes_white.png" alt="">
             </div>
             <div class="list" :class="[routerActive==1?'active':'']" @click="changePath(1,'mobileAbout')" >
-                <p>关于卓越</p>
+                <p>{{$t('关于卓越')}}</p>
                 <img  v-if="routerActive==1"  src="./../assets/mobile/icon_yes_white.png" alt="">
             </div>
             <div class="list" :class="[routerActive==2?'active':'']" @click="changePath(2,'mobileServer')" >
-                <p>行业经验</p>
+                <p>{{$t('行业经验')}}</p>
                 <img  v-if="routerActive==2"  src="./../assets/mobile/icon_yes_white.png" alt="">
             </div>
             <div class="list" :class="[routerActive==3?'active':'']" @click="changePath(3,'mobileMember')" >
-                <p>主要成员</p>
+                <p>{{$t('主要成员')}}</p>
                 <img  v-if="routerActive==3"  src="./../assets/mobile/icon_yes_white.png" alt="">
             </div>
             <div class="list" :class="[routerActive==4?'active':'']" @click="changePath(4,'mobileContact')" >
-                <p>联系我们</p>
+                <p>{{$t('联系我们')}}</p>
                 <img  v-if="routerActive==4"  src="./../assets/mobile/icon_yes_white.png" alt="">
             </div>
             
@@ -46,7 +46,7 @@
                 <p>中文</p>
                 <img v-if="langActive==0" src="./../assets/mobile/icon_yes_white.png" alt="">
             </div>
-            <div class="list" :class="[langActive==1?'active':'']" @click="changeLanguage(1,'en')" >
+            <div class="list" :class="[langActive==1?'active':'']" @click="changeLanguage(1,'en-US')" >
                 <p>English</p>
                 <img  v-if="langActive==1"  src="./../assets/mobile/icon_yes_white.png" alt="">
             </div>
