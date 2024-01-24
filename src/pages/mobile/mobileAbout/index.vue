@@ -170,7 +170,7 @@
     .page_about .list .list_text .list_context {
 
         font-size: 24px;
-        font-family: LastResort;
+        font-family: LastResort,PingFangSC, PingFang SC;;
         color: #BABEC9;
         line-height: 26px;
         letter-spacing: 2px;

@@ -1,6 +1,6 @@
 var lange = {
     "首页":"home page",
-    "关于卓越": "about zhuoyue",
+    "关于卓越": "about BEYOND CENTURY",
     "关于公司": "ABOUT THE COMPANY",
     "主要成员": "leading member",
 
