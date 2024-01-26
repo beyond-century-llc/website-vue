@@ -8,8 +8,8 @@
             </div>
             <div class="bannerSwiper">
                 <carousel-3d ref="carousel" @before-slide-change="onSlideChange" :autoplayTimeout="3000"
-                    :perspective="35" :display="5" :animationSpeed="1000" :width="200" :height="361" controlsVisible
-                    :space="340" :border='0' :controlsHeight="60">
+                    :perspective="35" :display="5" :animationSpeed="1000" :width="300" :height="461" controlsVisible
+                    :space="440" :border='0' :controlsHeight="60">
                     <slide v-for="(item, i) in lists" :index="i" :key="i">
                         <div class="slideList">
                             <img class="slideListImg" :src="item.imgUrl" alt="" />

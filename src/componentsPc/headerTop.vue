@@ -36,14 +36,15 @@
                     <span>选择您想阅读的语言</span>
                     <img class="error" @click="showChange=false" src="./../assets/img/icon_error_black.png" alt="" />
                 </div>
-                <div class="changeListc" :class="[active==0?'active':'']"  @click="changeLanguage(0,'en-US')">
-                    <span>English</span>
-                    <img class="yes" src="./../assets/img/icon_yes_white.png" alt="" />
-                </div>
-                <div class="changeListc" :class="[active==1?'active':'']" @click="changeLanguage(1,'zh-CN')">
+                <div class="changeListc" :class="[active==0?'active':'']" @click="changeLanguage(0,'zh-CN')">
                     <span>中文</span>
                     <img class="yes" src="./../assets/img/icon_yes_white.png" alt="" />
                 </div>
+                <div class="changeListc" :class="[active==1?'active':'']"  @click="changeLanguage(1,'en-US')">
+                    <span>English</span>
+                    <img class="yes" src="./../assets/img/icon_yes_white.png" alt="" />
+                </div>
+               
 
 
             </div>
@@ -61,8 +62,9 @@
         data() {
             return {
                 showChange: false,
-                active: 0,
+                active: localStorage.getItem('langActive') || 0,
                 routerActive: localStorage.getItem('routerIndex') || 1,
+                
             }
         },
         watch: {
@@ -82,6 +84,7 @@
                 
             },
             changeLanguage(index, type){
+                console.log(index,'changeLanguage')
                 localStorage.setItem('langActive', index)
                 this.active = index
                 this.changeLang = !this.changeLang
@@ -174,8 +177,8 @@
     }
 
     .content .logo {
-        width: 64px;
-        height: 24px;
+        width: 74px;
+        height: 34px;
         margin-top: 15px;
     }
 

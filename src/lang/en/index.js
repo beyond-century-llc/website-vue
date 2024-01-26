@@ -1,8 +1,8 @@
 var lange = {
-    "首页":"home page",
-    "关于卓越": "about BEYOND CENTURY",
+    "首页":"Home page",
+    "关于卓越": "About BEYOND CENTURY",
     "关于公司": "ABOUT THE COMPANY",
-    "主要成员": "leading member",
+    "主要成员": "Leading member",
 
     "IPO财务顾问服务": "IPO Financial Advisory Services",
     "努力成为我们客户最值得信赖的顾问": "Strive to become the most trusted consultant for our clients",
@@ -33,8 +33,8 @@ var lange = {
 
     "我们的专业团队致力于帮助私有企业进行财务结构重组": "Our professional people can help the private sector to undertake the reorganization of the financial structures and assist them in the process of going public in the United States stock markets through a traditional IPO or a De-SPAC (merging with a special purpose acquisition company “SPAC”). We also offer our clients with the tax and accounting planning programs, establish and improve the financial reporting system in accordance with the standards and requirements of the United States, and training and helping set up an internal control team. We are able to play the role as a bridge between the Chinese private enterprises and international capital markets. During the IPO process in U.S. stock markets, we act as an escort who closely work with our clients to establish a successful listing.",
     "我们的财务咨询服务包括但不限于以下相关项目": "·Our financial consulting services include the following related items without limitation：",
-    "制定企业改制总体方案和上市前方案。": "·Develop the overall program of enterprise restructuring and the pre-IPO plan.。",
-    "为企业提供企业资产管理。": "·Provide enterprise asset management, liability management, risk management consulting and the best financial structure design for the business.",
+    "制定企业改制总体方案和上市前方案": "·Develop the overall program of enterprise restructuring and the pre-IPO plan.。",
+    "为企业提供企业资产管理": "·Provide enterprise asset management, liability management, risk management consulting and the best financial structure design for the business.",
     "推荐保荐人": " ·Recommend relevant agencies such as sponsors, underwriters, lawyers, accountants, appraisers, and established transaction groups to assist our clients.",
     "保荐机构": "·Coordinate among sponsors, underwriters, accounting firms, law firms, appraisers’ firms, and other intermediary related agencies.",
     "培养高级管理人员": "·Train senior management personnel",
@@ -46,7 +46,7 @@ var lange = {
     "对目标公司进行尽职调查": "·Conduct due diligence, including financial, tax commercial, operational business on the target company.",
     "作为买方代理策划": "·Work with the buyer's agent in planning the acquisition of suitable enterprises while obtaining the most favorable outcomes and optimizing growth.",
     "作为卖方代理实施反兼并措施": "·Act as the seller to help companies achieve the lowest possible cost of a successful transaction.",
-    "保护客户在目标公司及其股东中的利益。": "·Protect our client’s interests in the target company and its shareholders.",
+    "保护客户在目标公司及其股东中的利益": "·Protect our client’s interests in the target company and its shareholders.",
     "组建采购小组并制定工作计划": "·Organize the acquisition group and set up work schedules.",
     "参与谈判并确定并购条件": "·Participate in the negotiations and determine the conditions for mergers and acquisitions.",
     "组织协调会计师事务所": "·Organize and coordinate accounting firms, law firms, appraisal firms and other intermediaries work related acquisitions.",
@@ -56,12 +56,12 @@ var lange = {
     "美国证券交易所": "The United States stock markets – S.E.C. (U.S. Securities and Exchange Commission) registration process for companies is often complex due to the heaping financial regulations. We assist our clients in understanding the laws and procedures while also troubleshooting and solving issues that arise on an individual basis.",
     "我们帮助公司完成必要的报告程序": " We help companies complete the necessary reporting procedures so that they can carry out normal daily activities in the United States stock markets.",
     "我们的专业团队在美国拥有丰富的经验": "Our professional team has extensive experience in the United States. They fully grasp and understand the Chinese and American financial reporting standards. ",
-    "我们对客户提供的金融管理条例遵从服务包括以下项目：": "We also provide our clients with financial regulations compliance services, which includes:",
+    "我们对客户提供的金融管理条例遵从服务包括以下项目": "We also provide our clients with financial regulations compliance services, which includes:",
     "协助公司准备所有财务相关数据": "·Assist the Company to prepare all financial related data, included but not limited to, management discussion and analysis, capitalization schedule and dilution schedule, to be incorporated into the registration statement on Form S-1/F-1 filed in connection with the initial public offering (IPO).",
     "财政报表年度性和季度性审查": " ·The annual financial statements and quarterly review (20-F, 6K, 10-K and 10-Q).",
     "塞班斯": "· Sarbanes-Oxley Compliance Services.",
     "帮助公司遵守并遵守美国证券交易委员会的法规": "·Helping companies comply with and follow the regulations of the U.S. Securities and Exchange Commission.",
-    "评估建立和实施内部控制体系.": "·Assess, establish, and implement an internal control system.",
+    "评估建立和实施内部控制体系": "·Assess, establish, and implement an internal control system.",
 
 
 
@@ -85,6 +85,6 @@ var lange = {
     "官网": "official website",
 
     "从细节开始": "Starting from the details, serve every enterprise well",
-    "主要成员": "leading member"
+    
 }
 export default lange

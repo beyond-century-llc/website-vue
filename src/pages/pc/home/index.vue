@@ -12,8 +12,12 @@
                 <img src="@/assets/img/icon_consultant.png" alt="" />
                 <p>
                     {{$t('努力成为我们客户最值得信赖的顾问')}}
-                    {{$t('提供超出预期的服务')}}
+                    <br/>
+                     <span style="margin-top: 10px;display: block;">
+                         {{$t('提供超出预期的服务')}}
+                     </span>
                 </p>
+               
             </div>
         </div>
     </div>
@@ -124,7 +128,7 @@
          font-family: SourceHanSansSC, SourceHanSansSC;
          font-weight: 400;
          color: #FFFFFF;
-         line-height: 38px;
+         line-height: 28px;
          float: left;
          margin-left: 30px;
      }

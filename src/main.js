@@ -10,9 +10,25 @@ import messages from './lang/index'
 
 // Vue.use(Carousel3d)
 // console.log(navigator.language,'navigator.language')
-
+const getLang = () => {
+    let lang = 'zh-CN'
+    if(localStorage.getItem('langActive') ){
+        
+        if(localStorage.getItem('langActive') == 0){
+             lang = "zh-CN"
+        }
+        if(localStorage.getItem('langActive') == 1){
+             lang = "en-US"
+        }
+    }else{
+         lang = navigator.language
+    }
+    
+    console.log(lang,'lang')
+    return lang
+}
 const i18n = new VueI18n({
-    locale: navigator.language || 'zh-CN', // set locale
+    locale:getLang(), // set locale
     fallbackLocale: 'zh',
 
     messages, // set locale messages

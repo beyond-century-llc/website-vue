@@ -8,7 +8,7 @@
                     <p class="memberInfo_name_text">{{showInfo.name}}</p>
                 </div>
                 <div class="memberInfo_text">
-                   {{showInfo.info}}
+                    {{showInfo.info}}
                 </div>
             </div>
             <div class="memberInfo_list">
@@ -22,6 +22,9 @@
                         :clickable="true" :controls-visible="false" class="memberInfo3D"
                         @before-slide-change="onSlideChange">
                         <slide v-for="(item, i) in slides" :index="i" class="memberInfoslides">
+                            <div v-if='activeIndex != i' class="memberInfoslidesMenban">
+
+                            </div>
                             <div class="memberInfoslidesList">
                                 <img class="headerImg" :src="item.headerImg" alt="" />
                                 <div class="memberName">
@@ -58,12 +61,12 @@
         data() {
             return {
                 activeIndex: 0,
-                showInfo:{
-                        id: 1,
-                        name: "Susan Woo, CPA",
-                        headerImg: require('./../../../assets/headerImg/susan.png'),
-                        info: this.$t('Susan')
-                    },
+                showInfo: {
+                    id: 1,
+                    name: "Susan Woo, CPA",
+                    headerImg: require('./../../../assets/headerImg/susan.png'),
+                    info: this.$t('Susan')
+                },
                 slides: [{
                         id: 1,
                         name: "Susan Woo, CPA",
@@ -90,18 +93,69 @@
                     },
 
                 ]
+
             }
         },
-        computed:{
-            // showInfo(){
-            //     return this.slides[0]
+        computed: {
+            // slides() {
+            //     return 
             // }
         },
+        watch: {
+            '$i18n.locale'(newLocale) {
+              // 在这里编写语言切换后需要执行的逻辑
+             // this.activeIndex = temp;
+             console.log('4444',)
+             this.showInfo = this.slides[this.activeIndex]
+             let info = '';
+             
+             switch (this.activeIndex) {
+                 case 0:
+                     info = this.$t('Susan')
+                     break;
+                 case 1:
+                     info = this.$t('xiajia')
+                     break;
+                 case 2:
+                     info = this.$t('Miranda')
+                     break;
+                 case 3:
+                     info = this.$t('Raymond')
+                     break;
+                 default:
+                     break;
+             }
+             console.log(info,'info')
+             this.showInfo.info = info
+              // 如果有其他组件或页面也依赖于语言切换，则可能还需要更新相关内容
+              this.$forceUpdate();
+            }
+          },
         methods: {
             onSlideChange(temp) {
                 this.activeIndex = temp;
-                console.log('4444', this.slides[temp])
+                // console.log('4444', this.slides[temp])
                 this.showInfo = this.slides[temp]
+                let info = '';
+
+                switch (temp) {
+                    case 0:
+                        info = this.$t('Susan')
+                        break;
+                    case 1:
+                        info = this.$t('xiajia')
+                        break;
+                    case 2:
+                        info = this.$t('Miranda')
+                        break;
+                    case 3:
+                        info = this.$t('Raymond')
+                        break;
+                    default:
+                        break;
+                }
+                console.log(info,'info',temp)
+                this.showInfo.info = info
                 // this.$emit('getData', this.list[temp].title)
             },
 
@@ -128,7 +182,7 @@
 
     .icon_right {
         position: absolute;
-        right: -120px;
+        right: -50px;
         top: 45%;
         cursor: pointer;
     }
@@ -144,13 +198,14 @@
 
 
     .memberInfo {
-        width: 220px;
+        width: 420px;
         /* height: 170px; */
         background: #030F1E;
         float: left;
         color: #fff;
         padding: 72px 62px 95px 75px;
         /* font-size: 12px; */
+        margin-top: 30px;
     }
 
     .memberInfo .memberInfo_name {
@@ -198,7 +253,7 @@
 
     .memberInfo3D {
         /* margin-top: 75px; */
-        padding-top: 75px;
+        padding-top: 35px;
         position: unset;
     }
 
@@ -206,6 +261,16 @@
         /* width: 197px;
         height: 259px; */
         /* position: sticky; */
+
+    }
+
+    .memberInfoslides .memberInfoslidesMenban {
+        position: absolute;
+        height: 326px;
+        width: 240px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 15px 15px 0 0;
+
     }
 
     .memberInfoslides .memberName {
@@ -241,13 +306,19 @@
         margin-left: 5px;
     }
 
+    .memberInfoslides .memberInfoslidesList .headerImg {
+        height: 326px;
+        /* :width="240" :height="411" */
+    }
+
     .memberInfoslides .memberInfoslidesList {
         /*  position: absolute;
          left: 0;
          top: 0; */
         transition: transform 0.3s ease-in-out !important;
-        
-        border-radius: 5px 5pc 0 0;
+
+        border-radius: 15px 15px 0 0;
+        overflow: hidden;
     }
 
     .memberInfoslides .memberInfoslidesList:hover .memberName {

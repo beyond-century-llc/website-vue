@@ -49,7 +49,7 @@
                 </slider-item>
 
             </slider>
-            <div class="customList" v-if="sliderValue == 1 ">
+            <div class="customList" v-if="sliderValue == 0 ">
                 <div class="list" style="margin-left: 28px;">Above and Beyond</div>
                 <div class="list" style="margin-left: 28px;">Accountability</div>
                 <div class="list" style="margin-left: 28px;">Accurate</div>
@@ -70,10 +70,10 @@
 
 
             </div>
-            <div class="customList2" v-if="sliderValue == 2">
+            <div class="customList2" v-if="sliderValue == 1">
                 <p>
                     {{$t("由于商业环境和交易的复杂性增加以及会计准则的不断更新")}}
-                    </br>
+                    
                     {{$t('我们的会计咨询服务包括但不限于以下相关项目')}}
                     </br>
                     {{$t('协助和支持建立会计系统')}}
@@ -92,7 +92,7 @@
 
                 </p>
             </div>
-            <div class="customList2" v-if="sliderValue == 3">
+            <div class="customList2" v-if="sliderValue == 2">
                 <p>
                     {{$t('我们的专业团队致力于帮助私有企业进行财务结构重组')}}
                     </br>
@@ -109,7 +109,7 @@
 
                 </p>
             </div>
-            <div class="customList2" v-if="sliderValue == 4">
+            <div class="customList2" v-if="sliderValue == 3">
                 <p>
                     {{$t('我们的并购实践团队将在每一次交易中充当保驾护航的角色')}}</br>
                     {{$t('对目标公司进行尽职调查')}}</br>
@@ -122,7 +122,7 @@
                     {{$t('协助当事人获取相关文件')}}</br>
                 </p>
             </div>
-            <div class="customList2" v-if="sliderValue == 5">
+            <div class="customList2" v-if="sliderValue == 4">
                 <p>
                     {{$t('美国证券交易所')}}
                     {{$t('我们帮助公司完成必要的报告程序')}}</br>
@@ -156,7 +156,7 @@
         },
         data() {
             return {
-                sliderValue: 2,
+                sliderValue: 0,
                 list: [],
             }
         },
