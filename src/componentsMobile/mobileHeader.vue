@@ -28,16 +28,34 @@
                 <img  v-if="routerActive==1"  src="./../assets/mobile/icon_yes_white.png" alt="">
             </div>
             <div class="list" :class="[routerActive==2?'active':'']" @click="changePath(2,'mobileServer')" >
-                <p>{{$t('行业经验')}}</p>
+                <p>{{$t('服务宗旨')}}</p>
                 <img  v-if="routerActive==2"  src="./../assets/mobile/icon_yes_white.png" alt="">
             </div>
-            <div class="list" :class="[routerActive==3?'active':'']" @click="changePath(3,'mobileMember')" >
-                <p>{{$t('主要成员')}}</p>
-                <img  v-if="routerActive==3"  src="./../assets/mobile/icon_yes_white.png" alt="">
+            <div class="list" :class="[routerActive==3?'active':'']" @click="serverType()" style="display: inline-block;">
+                <p style="height: 70px;line-height: 70px;" >{{$t('服务类型')}}</p>
+                <!-- <img  v-if="routerActive==3"  src="./../assets/mobile/icon_yes_white.png" alt=""> -->
+                <div class="tabbarList" v-if="routerActive == 3">
+                    <div @click="changePath(3,'mobileServerType',2)">
+                        {{$t('会计咨询服务')}}
+                    </div>
+                    <div @click="changePath(3,'mobileServerType',3)">
+                        {{$t("IPO财务顾问服务")}}
+                    </div>
+                    <div @click="changePath(3,'mobileServerType',4)">
+                        {{$t('兼并和收购咨询服务')}}
+                    </div>
+                    <div @click="changePath(3,'mobileServerType',5)">
+                        {{$t('上市公司金融监管咨询服务')}}
+                    </div>
+                </div>
             </div>
-            <div class="list" :class="[routerActive==4?'active':'']" @click="changePath(4,'mobileContact')" >
-                <p>{{$t('联系我们')}}</p>
+            <div class="list" :class="[routerActive==4?'active':'']" @click="changePath(4,'mobileMember')" >
+                <p>{{$t('主要成员')}}</p>
                 <img  v-if="routerActive==4"  src="./../assets/mobile/icon_yes_white.png" alt="">
+            </div>
+            <div class="list" :class="[routerActive==5?'active':'']" @click="changePath(5,'mobileContact')" >
+                <p>{{$t('联系我们')}}</p>
+                <img  v-if="routerActive==5"  src="./../assets/mobile/icon_yes_white.png" alt="">
             </div>
             
         </div>
@@ -83,10 +101,13 @@
                 this.showChange = !this.showChange;
                 this.changeLang = false
             },
-            changePath(index, path) {
+            changePath(index, path,type) {
 
                 this.$router.push({
                     name: path,
+                    query: {
+                                userType: type
+                    }
                 })
                 // console.log(index,'indexindex')
                 localStorage.setItem('routerIndex', index)
@@ -99,11 +120,12 @@
                 localStorage.setItem('langActive', index)
                 this.langActive = index
                 this.changeLang = !this.changeLang
-                
                 this.$i18n.locale = type
-
-                
-            }
+            },
+            serverType(){
+              this.routerActive = 3
+              this.showServer = true;
+            },
         }
     }
 </script>
@@ -148,6 +170,22 @@
         top: 88px;
         right: 0;
         z-index: 9999;
+        background-color: #030F1E;
+    }
+    .tabbarList{
+        display: block;
+        width: 100%;
+        height: 280px;
+    }
+    .tabbarList div{
+        /* display: flex; */
+       height: 80px;
+       line-height: 80px;
+        /* width: 100%; */
+        background-color: #ccc;
+        text-align: left;
+        padding-left: 100px;
+        /* margin-left: 100px; */
     }
 
     .tabbar .list {
@@ -156,7 +194,7 @@
         background: #030F1E;
             display: flex;
             align-items: center;
-      
+      /* margin-left: 100px; */
        
     }
     .tabbar .list p{

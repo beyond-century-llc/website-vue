@@ -156,7 +156,7 @@
 
     .item .memberImg {
         width: 100%;
-        height: 746px;
+        height: 806px;
 
     }
 

@@ -14,18 +14,33 @@
                     <span v-if="routerActive == 2"></span>
                 </div>
                 <div @click="changePath(3,'server')">
-                    <p>{{$t('行业经验')}}</p>
+                    <p>{{$t('服务宗旨')}}</p>
                     <span v-if="routerActive == 3"></span>
                 </div>
-                <div @click="changePath(4,'member')">
-                    <p>{{$t('主要成员')}}</p>
-                    <span v-if="routerActive == 4"></span>
+                <div style="position: relative;" @click="serverType()">
+                    <p>{{$t('服务类型')}}</p>
+                    <span v-if="routerActive == 4 "></span>
+                    <div class="tabbarList" v-if="routerActive == 4 && showServer">
+                        <div @click="changePath(4,'serverType',0)">
+                            {{$t('会计咨询服务')}}
+                        </div>
+                        <div @click="changePath(4,'serverType',1)">
+                            {{$t("兼并和收购咨询服务")}}
+                        </div>
+                        <div @click="changePath(4,'serverType',2)">
+                            {{$t('上市公司金融监管咨询服务')}}
+                        </div>
+                    </div>
                 </div>
-                <div @click="changePath(5,'contact')">
-                    <p>{{$t('联系我们')}}</p>
+                <div @click="changePath(5,'member')">
+                    <p>{{$t('主要成员')}}</p>
                     <span v-if="routerActive == 5"></span>
                 </div>
-                
+                <div @click="changePath(6,'contact')">
+                    <p>{{$t('联系我们')}}</p>
+                    <span v-if="routerActive == 6"></span>
+                </div>
+
             </div>
             <div class="changeLang" @click="showChange = !showChange">
                 <img class="language" src="./../assets/img/icon_language_blue.png" alt="" />
@@ -40,11 +55,11 @@
                     <span>中文</span>
                     <img class="yes" src="./../assets/img/icon_yes_white.png" alt="" />
                 </div>
-                <div class="changeListc" :class="[active==1?'active':'']"  @click="changeLanguage(1,'en-US')">
+                <div class="changeListc" :class="[active==1?'active':'']" @click="changeLanguage(1,'en-US')">
                     <span>English</span>
                     <img class="yes" src="./../assets/img/icon_yes_white.png" alt="" />
                 </div>
-               
+
 
 
             </div>
@@ -64,34 +79,44 @@
                 showChange: false,
                 active: localStorage.getItem('langActive') || 0,
                 routerActive: localStorage.getItem('routerIndex') || 1,
-                
+                showServer:false,
             }
         },
         watch: {
-                
+
         },
         methods: {
-            changePath(index, path) {
-
+            serverType(){
+              this.routerActive = 4 
+              this.showServer = true;
+            },
+            changePath(index, path, type) {
+                console.log(index, path, type, 'index, path,type')
+               
                 this.$router.push({
-                    name:path,
+                    name: path,
+                    query: {
+                                userType: type
+                    }
                 })
+                this.showServer = false
                 // console.log(index,'indexindex')
                 localStorage.setItem('routerIndex', index)
                 this.$nextTick(() => {
                     this.routerActive = index;
                 })
-                
+
+
             },
-            changeLanguage(index, type){
-                console.log(index,'changeLanguage')
+            changeLanguage(index, type) {
+                console.log(index, 'changeLanguage')
                 localStorage.setItem('langActive', index)
                 this.active = index
                 this.changeLang = !this.changeLang
-                
+
                 this.$i18n.locale = type
-            
-                
+
+
             }
         }
     }
@@ -203,6 +228,28 @@
         align-content: center;
         flex-wrap: wrap;
         cursor: pointer;
+    }
+
+    .content .tabbar .tabbarList {
+        position: absolute;
+        left: 0px;
+        top: 40px;
+        height: 200px;
+        width: 300px;
+        z-index: 9999;
+        cursor: pointer;
+
+        /* padding: 10px; */
+    }
+
+    .content .tabbar .tabbarList div {
+        background: #0A1B2F;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+
+    .content .tabbar .tabbarList div:hover {
+        background: #E9E9E9;
     }
 
     .content .tabbar div {

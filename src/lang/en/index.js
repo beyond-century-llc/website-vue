@@ -3,7 +3,10 @@ var lange = {
     "关于卓越": "About BEYOND CENTURY",
     "关于公司": "ABOUT THE COMPANY",
     "主要成员": "Leading member",
-
+    
+    "服务宗旨":"Service tenet",
+    "服务类型":"Service Type",
+    
     "IPO财务顾问服务": "IPO Financial Advisory Services",
     "努力成为我们客户最值得信赖的顾问": "Strive to become the most trusted consultant for our clients",
     "提供超出预期的服务": "Provide services beyond expectations",

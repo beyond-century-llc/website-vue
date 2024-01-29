@@ -4,6 +4,8 @@ import Router from 'vue-router'
 import Home from '../pages/pc/home'
 import About from '../pages/pc/about'
 import server from '../pages/pc/server'
+import serverType from '../pages/pc/serverType'
+
 import member from '../pages/pc/member'
 import contact from '../pages/pc/contact'
 
@@ -11,8 +13,10 @@ import contact from '../pages/pc/contact'
 import mobileHome from '../pages/mobile/mobileHome'
 import mobileAbout from '../pages/mobile/mobileAbout'
 import mobileServer from '../pages/mobile/mobileServer'
+import mobileServerType from '../pages/mobile/mobileServerType'
 import mobileMember from '../pages/mobile/mobileMember'
 import mobileContact from '../pages/mobile/mobileContact'
+
 
 
 
@@ -30,6 +34,7 @@ if (window.navigator.userAgent.match(
         
         {
             path: '/',
+            // redirect:"/",
             name: 'Home',
             component: Home
         },
@@ -42,6 +47,12 @@ if (window.navigator.userAgent.match(
             path: '/server',
             name: 'server',
             component: server
+        },
+        
+        {
+            path: '/serverType',
+            name: 'serverType',
+            component: serverType
         },
         
         {
@@ -75,6 +86,12 @@ if (window.navigator.userAgent.match(
             path: '/mobileServer',
             name: 'mobileServer',
             component: mobileServer
+            
+        },
+        {
+            path: '/mobileServerType',
+            name: 'mobileServerType',
+            component: mobileServerType
             
         },
         {
