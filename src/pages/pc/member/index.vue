@@ -87,7 +87,7 @@
                     },
                     {
                         id: 4,
-                        name: "Raymond Choy,CPA, CGMA",
+                        name: "Raymond Choy, CPA, CGMA",
                         headerImg: require('./../../../assets/headerImg/Raymond-Choy.png'),
                         info: this.$t('Raymond')
                     },
@@ -198,12 +198,12 @@
 
 
     .memberInfo {
-        width: 420px;
+        width: 480px;
         /* height: 170px; */
         background: #030F1E;
         float: left;
         color: #fff;
-        padding: 72px 62px 95px 75px;
+        padding: 46px 52px 95px 65px;
         /* font-size: 12px; */
         margin-top: 30px;
     }
@@ -221,7 +221,7 @@
 
     .memberInfo .memberInfo_name .memberInfo_name_text {
         float: left;
-        font-size: 14px;
+        font-size: 24px;
 
         font-weight: 500;
 
@@ -231,8 +231,8 @@
 
     .memberInfo .memberInfo_text {
         margin-top: 17px;
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 25px;
     }
 
     .memberInfo_list {

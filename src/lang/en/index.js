@@ -1,13 +1,13 @@
 var lange = {
     "首页":"Home page",
-    "关于卓越": "About BEYOND CENTURY",
+    "关于卓越": "About BCC",
     "关于公司": "ABOUT THE COMPANY",
-    "主要成员": "Leading member",
+    "主要成员": "Leading Members",
     
-    "服务宗旨":"Service tenet",
-    "服务类型":"Service Type",
+    "服务宗旨":"Core Values",
+    "服务类型":"Service Types",
     
-    "IPO财务顾问服务": "IPO Financial Advisory Services",
+    "IPO财务顾问服务": "IPO financial consulting serivces",
     "努力成为我们客户最值得信赖的顾问": "Strive to become the most trusted consultant for our clients",
     "提供超出预期的服务": "Provide services beyond expectations",
     "了解更多": "Learn more",
@@ -69,8 +69,8 @@ var lange = {
 
 
     "点击阅读全文": "Click to read the full text",
-    "兼并和收购咨询服务": "Merger and acquisition consulting services",
-    "上市公司金融监管咨询服务": "Financial regulatory consulting services for listed companies",
+    "兼并和收购咨询服务": "M&A consulting services",
+    "上市公司金融监管咨询服务": "Financial regulatory consulting services",
 
     "Susan": "Susan Woo is a Certified Public Accountant in the United States. She has over 25 years of experience in auditing and accounting practices in both China and the U.S. Susan has provided financial advisory services in a wide variety of industries including technology, consumer products, business products and services, natural  resources and manufacturing. Susan has assisted in a broad range of investment banking transactions including mergers and acquisitions for both buyer-side and seller-side, financial restructurings and IPOs. She also assists clients in international tax law and other services. Susan has assisted a number of Chinese companies in successfully listing in the U.S. stock markets through IPO or merger acquisitions. She fully understands the differences in financial systems between China and the United States. With her knowledge and wisdom, she is able to help her clients fill the broad knowledge gap between China and the U.S. regarding financial and tax policies. In addition, she also advises U.S. companies invest in the Chinese mainland market.",
     "xiajia": "Ms. Xia has over 19 years of experience in financial reporting with emphasis on SEC reporting, technical accounting (US GAAP and IFRS) and merger and acquisition transactions. She has worked in a wide variety of industries including consumer products, utilities and renewals energy, healthcare, financial services, and professional services. Before joining Beyond Century, Jia worked as Corporate Controller for Palm Tree, a private equity firm in Los Angeles; Manager of Financial and Regulatory Reporting for Capital Group, one of world’s largest global asset managers with over 2.3 Trillion in assets under management;  Regulatory and Revenue Accounting manager for Southern California Edison, one of the largest utility companies in the US and a Fortune 500 company; Financial Reporting Manager at Avery Dennison, a multinational manufacturer and distributor of packaging materials and a Fortune 500 company; Audit Manager for Consumer and Industrial Products Service Line at PricewaterhouseCoopers, one of the Big Four accounting firms。 Ms. Xia earned her B.A. in Economics/Minor in Accounting from UCLA and is a licensed CPA in California. Outside of work, Jia enjoys cruises, gardening, learning new languages, and spending time with her family. Jia is fluent in Mandarin Chinese, English, and Portuguese and has conversational ability Spanish. ",

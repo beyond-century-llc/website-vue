@@ -25,11 +25,16 @@
                             {{$t('会计咨询服务')}}
                         </div>
                         <div @click="changePath(4,'serverType',1)">
-                            {{$t("兼并和收购咨询服务")}}
+                            {{$t('IPO财务顾问服务')}}
                         </div>
                         <div @click="changePath(4,'serverType',2)">
+                            {{$t("兼并和收购咨询服务")}}
+                        </div>
+                        <div @click="changePath(4,'serverType',3)">
                             {{$t('上市公司金融监管咨询服务')}}
                         </div>
+                        
+                         
                     </div>
                 </div>
                 <div @click="changePath(5,'member')">
@@ -235,7 +240,7 @@
         left: 0px;
         top: 40px;
         height: 200px;
-        width: 300px;
+        width: 400px;
         z-index: 9999;
         cursor: pointer;
 

@@ -21,7 +21,7 @@
                         <div class="list" style="margin-left: 28px;">Innovative</div>
                         <div class="list" style="margin-left: 28px;">Reliability</div>
                         <div class="list" style="margin-left: 28px;">Responsibility</div>
-                        <div class="list" style="margin-left: 28px;">Core Values</div>
+                        <!-- <div class="list" style="margin-left: 28px;">Core Values</div> -->
                         <div class="list" style="margin-left: 28px;">Trustworthy</div>
                     </div>
                 </div>
