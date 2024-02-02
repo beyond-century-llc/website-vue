@@ -219,7 +219,7 @@
         background: #0A1B2F;
         position: fixed;
         top: 0;
-        
+        z-index: 999;
     }
 
     .content {

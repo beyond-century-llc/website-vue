@@ -203,6 +203,7 @@
         height: 88px;
         position: fixed;
         top: 0;
+        z-index: 999;
     }
     .headerTop {
         width: 100%;
