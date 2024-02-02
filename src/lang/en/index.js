@@ -24,7 +24,7 @@ var lange = {
     "行业经验": "Industry experience",
     "亚太区服务": "Asia Pacific Services",
     "会计咨询服务": "Accounting consulting services",
-    "由于商业环境和交易的复杂性增加以及会计准则的不断更新": "Due to the increase in complexity of the business environment and transactions along with constant updates in accounting pronouncement, the accounting and financial reporting are becoming increasingly challenging. We understand that the public Companies may often enter into certain transactions which were unique in the nature and signification in the amount in terms of impact on the financial statements, such as acquisitions, stock compensation and financing agreements. We will provide special analysis and assessment of impacts on the financial statements for the aforesaid transactions pursuant to U.S. Generally Accepted Accounting Principles (“GAAP”) and Securities and Exchange Commission (“SEC”) rules. We are able to offer not only the traditional accounting services, but also the special services in the field of each specific industry which requires special knowledge and experiences. Our professional accounting team has sufficient knowledge and experience in helping clients complete the establishment of an accounting system and resolve complex issues in both China and the U.S. Our accounting services are able to enhance the accuracy of a company's financial statements and support to solve the problem",
+    "由于商业环境和交易的复杂性增加以及会计准则的不断更新": "Due to the increase in complexity of the business environment and transactions along with constant updates in accounting pronouncement, the accounting and financial reporting are becoming increasingly challenging. We understand that the public Companies may often enter into certain transactions which were unique in the nature and signification in the amount in terms of impact on the financial statements, such as acquisitions, stock compensation and financing agreements. We will provide special analysis and assessment of impacts on the financial statements for the aforesaid transactions pursuant to U.S. Generally Accepted Accounting Principles (“GAAP”) and Securities and Exchange Commission (“SEC”) rules. We are able to offer not only the traditional accounting services, but also the special services in the field of each specific industry which requires special knowledge and experiences. Our professional accounting team has sufficient knowledge and experience in helping clients complete the establishment of an accounting system and resolve complex issues in both China and the U.S. Our accounting services are able to enhance the accuracy of a company's financial statements and support to solve the problem.",
     "我们的会计咨询服务包括但不限于以下相关项目": "Our accounting business services include the following related items without limitation:",
     "协助和支持建立会计系统": " Prepare and support the establishment of accounting systems, budgeting, and cash flow forecasting",
     "分析和评估重要和": " Analyze and assess the significant and /or unique transactions",
@@ -45,7 +45,7 @@ var lange = {
     "协助招股说明书的起草和尽职调查": "Assist in prospectus drafting and diligence",
 
 
-    "我们的并购实践团队将在每一次交易中充当保驾护航的角色": "Our M&A practice team will act as an escort during each transaction, fully commit themselves to escort each client with differentiated, value-added advice and a complete and proven method to facilitate smooth and successful acquisitions",
+    "我们的并购实践团队将在每一次交易中充当保驾护航的角色": "Our M&A practice team will act as an escort during each transaction, fully commit themselves to escort each client with differentiated, value-added advice and a complete and proven method to facilitate smooth and successful acquisitions.",
     "对目标公司进行尽职调查": "Conduct due diligence, including financial, tax commercial, operational business on the target company",
     "作为买方代理策划": "Work with the buyer's agent in planning the acquisition of suitable enterprises while obtaining the most favorable outcomes and optimizing growth",
     "作为卖方代理实施反兼并措施": "Act as the seller to help companies achieve the lowest possible cost of a successful transaction",
@@ -58,7 +58,7 @@ var lange = {
 
     "美国证券交易所": "The United States stock markets – S.E.C. (U.S. Securities and Exchange Commission) registration process for companies is often complex due to the heaping financial regulations. We assist our clients in understanding the laws and procedures while also troubleshooting and solving issues that arise on an individual basis.",
     "我们帮助公司完成必要的报告程序": " We help companies complete the necessary reporting procedures so that they can carry out normal daily activities in the United States stock markets",
-    "我们的专业团队在美国拥有丰富的经验": "Our professional team has extensive experience in the United States They fully grasp and understand the Chinese and American financial reporting standards",
+    "我们的专业团队在美国拥有丰富的经验": "Our professional team has extensive experience in the United States. They fully grasp and understand the Chinese and American financial reporting standards.",
     "我们对客户提供的金融管理条例遵从服务包括以下项目": "We also provide our clients with financial regulations compliance services, which includes:",
     "协助公司准备所有财务相关数据": "Assist the Company to prepare all financial related data, included but not limited to, management discussion and analysis, capitalization schedule and dilution schedule, to be incorporated into the registration statement on Form S-1/F-1 filed in connection with the initial public offering (IPO)",
     "财政报表年度性和季度性审查": " The annual financial statements and quarterly review (20-F, 6K, 10-K and 10-Q)",
@@ -70,6 +70,8 @@ var lange = {
 
     "点击阅读全文": "Click to read the full text",
     "兼并和收购咨询服务": "M&A consulting services",
+    "兼并和收购咨询服务2": "Mergers and acquisitions advisory services",
+    
     "上市公司金融监管咨询服务": "Financial regulatory consulting services",
 
     "Susan": "Susan Woo is a Certified Public Accountant in the United States. She has over 25 years of experience in auditing and accounting practices in both China and the U.S.. Susan has provided financial advisory services in a wide variety of industries including technology, consumer products, business products and services, natural  resources and manufacturing. Susan has assisted in a broad range of investment banking transactions including mergers and acquisitions for both buyer-side and seller-side, financial restructurings and IPOs. She also assists clients in international tax law and other services. Susan has assisted a number of Chinese companies in successfully listing in the U.S. stock markets through IPO or merger acquisitions. She fully understands the differences in financial systems between China and the United States. With her knowledge and wisdom, she is able to help her clients fill the broad knowledge gap between China and the U.S. regarding financial and tax policies. In addition, she also advises U.S. companies invest in the Chinese mainland market.",
@@ -86,6 +88,8 @@ var lange = {
     "地址": "LA office",
     // "电话": "电话",
     "官网": "Official Website",
+    "美国总部地址":"U.S. office：21660 E Copley Drive, Suite 268 Diamond Bar, CA 91765",
+    "中国办公室地址":"China office:  湖南省长沙市岳麓区万为科技产业园1栋303室",
 
     "从细节开始": "Starting from the details, serve every enterprise well",
     

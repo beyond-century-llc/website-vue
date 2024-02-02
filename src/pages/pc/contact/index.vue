@@ -20,16 +20,14 @@
                         </div>
                     </div>
                     <span style="margin-top: 20px;">
-                        {{$t('地址')}}：21660 E Copley Drive, Suite 268 Diamond Bar, CA 91765
-
-
+                        {{$t('美国总部地址')}}
+                    </span>
+                    <span style="margin-top: 10px;">
+                        {{$t('中国办公室地址')}}
                     </span>
                     <span style="margin-top: 10px;">
                         {{$t('电话')}}：(909) 839-6788
-
-
                     </span>
-
                     <span style="margin-top: 10px;margin-bottom: 20px;">
                         {{$t('官网')}}：www.beyondcenturyllc.com
                     </span>
@@ -38,7 +36,7 @@
             <div class="footer">
                 <div class="centext">
                     <div class="logo">
-                        <img src="./../../../assets/img/logo.png" alt="" />
+                        <img src="./../../../assets/img/logo.jpg" alt="" />
                         <p>
                             努力成为我们客户最值得信赖的顾问 提供超出预期的服务
                         </p>

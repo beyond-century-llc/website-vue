@@ -25,16 +25,16 @@
                     <div class="silde sildeList silde4">
                         <div class="silde_mengban">
                             <!-- <p>{{$t('行业经验')}}</p> -->
-                            <p>{{$t("兼并和收购咨询服务")}}</p>
+                            <p>{{$t("兼并和收购咨询服务2")}}</p>
                         </div>
                     </div>
 
                 </slider-item>
                 <slider-item>
                     <div class="silde sildeList silde4">
-                        <div class="silde_mengban">
+                        <div class="silde_mengban" >
                             <!-- <p>{{$t('行业经验')}}</p> -->
-                            <p>{{$t('上市公司金融监管咨询服务')}}</p>
+                            <p :style="{width:$i18n.locale=='zh-CN'?'515px':''}">{{$t('上市公司金融监管咨询服务')}}</p>
                         </div>
                     </div>
 
@@ -400,6 +400,7 @@
         /* line-height: 51px; */
         text-align: center;
         margin-top: -100px;
+        
     }
 
     .sildeList span {

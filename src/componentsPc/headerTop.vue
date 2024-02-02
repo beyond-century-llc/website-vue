@@ -25,7 +25,6 @@
                      id="tabbarList" v-if="routerActive == 4 && showServer">
                         <div @click="changePath(4,'serverType',0)">
                             {{$t('会计咨询服务')}}
-                            
                         </div>
                         <div @click="changePath(4,'serverType',1)">
                             {{$t('IPO财务顾问服务')}}
@@ -312,7 +311,7 @@
 
     .content .tabbar .tabbarList {
         position: absolute;
-        left: 0px;
+        left: -70px;
         top: 40px;
         height: 200px;
         width: 400px;
