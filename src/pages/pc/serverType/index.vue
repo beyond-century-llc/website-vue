@@ -207,7 +207,7 @@
             <div class="customList2" v-if="sliderValue == 3">
                 <p>
                     {{$t('美国证券交易所')}}
-                    {{$t('我们帮助公司完成必要的报告程序')}}
+                    <!-- {{$t('我们帮助公司完成必要的报告程序')}} -->
                     {{$t('我们的专业团队在美国拥有丰富的经验')}}</br>
                     </br>
                     {{$t('我们对客户提供的金融管理条例遵从服务包括以下项目')}}</br>
@@ -395,7 +395,7 @@
         font-family: Poppins, Poppins;
         font-weight: bold;
         color: #FFFFFF;
-        line-height: 51px;
+        /* line-height: 51px; */
         text-align: center;
     }
 

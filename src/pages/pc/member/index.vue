@@ -79,14 +79,14 @@
                         name: "Susan Woo, CPA",
                         headerImg: require('./../../../assets/headerImg/susan.png'),
                         info: this.$t('Susan'),
-                        duties:"Director"
+                        duties:"Partner"
                     },
                     {
                         id: 2,
                         name: "夏佳 Jia Xia, CPA",
                         headerImg: require('./../../../assets/headerImg/xiajia.png'),
                         info: this.$t('xiajia'),
-                        duties:"Partner"
+                        duties:"Director"
                     },
                     {
                         id: 3,
@@ -223,7 +223,9 @@
     }
 
     .memberInfo .memberInfo_name {
-        display: inline-block;
+        
+        display: flex;
+            align-items: center;
     }
 
     .memberInfo .memberInfo_name .memberInfo_name_icon {

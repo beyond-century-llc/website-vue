@@ -315,7 +315,7 @@
         width: 400px;
         z-index: 9999;
         cursor: pointer;
-
+        text-align: left;
         /* padding: 10px; */
     }
 

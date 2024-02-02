@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        <headerTop ></headerTop>
+        <headerTop></headerTop>
         <div class="banner">
             <div class="logo">
                 <img src="@/assets/img/BEYONDCENTURY.png" alt="" />
@@ -13,48 +13,43 @@
                     <img src="@/assets/img/icon_consultant.png" alt="" />
                     <p>
                         {{$t('努力成为我们客户最值得信赖的顾问')}}
-                      
+
                     </p>
                 </div>
                 <div @click="routerGo('serverType')">
                     <img src="@/assets/img/icon_consultant.png" alt="" />
                     <p>
-                       {{$t('提供超出预期的服务')}}
+                        {{$t('提供超出预期的服务')}}
                     </p>
                 </div>
-                
-               
+
+
             </div>
         </div>
         <div style="height: 100%;width: 100%;">
             <div class="content">
                 <div class="customList">
-                    
-                   
-                  
-                  
-                   
-                    <div class="list" style="margin-left: 28px;">{{$t('超越卓越')}}</div>
-                    <div class="list" style="margin-left: 28px;">{{$t('责任')}}</div>
-                    <div class="list" style="margin-left: 28px;">{{$t('准确')}}</div>
-                    <div class="list" style="margin-left: 28px;">{{$t('能力')}}</div>
-                    <div class="list" style="margin-left: 28px;">{{$t('可靠')}}</div>
-                    <div class="list" style="margin-left: 28px;">{{$t('热爱')}}</div>
-                    <div class="list" style="margin-left: 0px;">{{$t('勤勉')}}</div>
-                    <div class="list" style="margin-left: 28px;">{{$t('优质')}}</div>
-                    <div class="list" style="margin-left: 28px;">{{$t('诚实')}}</div>
+                    <div class="list" style="margin-left: 42px;">{{$t('超越卓越')}}</div>
+                    <div class="list" style="margin-left: 42px;">{{$t('责任')}}</div>
+                    <div class="list" style="margin-left: 42px;">{{$t('准确')}}</div>
+                    <div class="list" style="margin-left: 42px;">{{$t('能力')}}</div>
+                    <div class="list" style="margin-left: 42px;">{{$t('可靠')}}</div>
+                    <div class="list" style="margin-left: 42px;">{{$t('热爱')}}</div>
+                    <div class="list" style="margin-left: 42px;">{{$t('勤勉')}}</div>
+                    <div class="list" style="margin-left: 42px;">{{$t('优质')}}</div>
+                    <div class="list" style="margin-left: 42px;">{{$t('诚实')}}</div>
                     <!-- <div class="list" style="margin-left: 85px;">Professionalism</div> -->
-                    <div class="list" style="margin-left: 28px;">{{$t('专业')}}</div>
-                    <div class="list" style="margin-left: 28px;">{{$t('守信')}}</div>
-                    <div class="list" style="margin-left: 28px;">{{$t('创新')}}</div>
-                    <div class="list" style="margin-left: 28px;">{{$t('洞察')}}</div>
-                    <!-- <div class="list" style="margin-left: 28px;">{{$t('责任')}}</div> -->
-                    <!-- <div class="list" style="margin-left: 28px;">Core Values</div> -->
-                    <div class="list" style="margin-left: 28px;">{{$t('信赖')}}</div>
+                    <div class="list" style="margin-left: 42px;">{{$t('专业')}}</div>
+                    <div class="list" style="margin-left: 42px;">{{$t('守信')}}</div>
+                    <div class="list" style="margin-left: 42px;">{{$t('创新')}}</div>
+                    <div class="list" style="margin-left: 42px;">{{$t('洞察')}}</div>
+                    <!-- <div class="list" style="margin-left: 42px;">{{$t('责任')}}</div> -->
+                    <!-- <div class="list" style="margin-left: 42px;">Core Values</div> -->
+                    <div class="list" style="margin-left: 42px;">{{$t('信赖')}}</div>
                 </div>
             </div>
-           
-        
+
+
         </div>
     </div>
 </template>
@@ -107,10 +102,10 @@
                 }
                 this.$refs.carousel.goFar(index);
             },
-            routerGo(path){
+            routerGo(path) {
                 this.$router.push({
                     name: path,
-                   
+
                 })
             }
         },
@@ -120,10 +115,11 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .page{
+    .page {
         width: 100%;
         height: 100%;
     }
+
     .content {
         height: 100%;
         width: 100%;
@@ -131,52 +127,53 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
         display: flex;
-        align-items:center;
+        align-items: center;
         /* padding-top: 100px; */
     }
-    
+
     .silde {
-    
+
         height: inherit;
         background-size: cover;
-    
+
     }
-    
+
     .customList {
         /* padding: 65px 135px; */
         width: 805px;
         height: 413px;
         margin: 0 auto;
-        
+
     }
-    
+
     .customList .list {
         /* width: 180px;
         height: 45px;
         text-align: center; */
-    
-        height: 45px;
+
+        height: 50px;
         background: #EFF3FF;
         border-radius: 23px;
         padding: 0 25px;
         display: inline-block;
-        font-size: 17px;
+        font-size: 20px;
         font-family: SourceHanSansSC, SourceHanSansSC;
         font-weight: 500;
         color: #022EA8;
-        line-height: 45px;
+        line-height: 50px;
         /* margin: 28px; */
         cursor: pointer;
         margin-bottom: 28px;
-    
+        font-weight: 900;
+        font-style: italic;
     }
-    
+
     .customList .list:hover {
         background: #022EA8;
         color: #fff;
     }
-    
-    .banner{
+
+    .banner {
         /* width: 100%; */
         height: 100%;
         background-image: url('../../../assets/img/bg_ship_home.png');
@@ -185,49 +182,56 @@
         padding-top: 120px;
         padding-left: 270px;
     }
+
     .banner .logo {
         width: 347px;
         height: 194px;
         /* margin: 0 auto; */
         margin-left: 200px;
     }
-    .banner .logo img{
+
+    .banner .logo img {
         width: 100%;
         height: 100%;
     }
-     .banner .logo p{
-        
-         font-size: 25px;
-         font-family: SourceHanSansSC, SourceHanSansSC;
-         font-weight: 400;
-         color: #FFFFFF;
-         line-height: 37px;
-         letter-spacing: 2px;
-         margin-top: 32px;
-     }
-     .server {
+
+    .banner .logo p {
+
+        font-size: 25px;
+        font-family: SourceHanSansSC, SourceHanSansSC;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 37px;
+        letter-spacing: 2px;
+        margin-top: 32px;
+    }
+
+    .server {
         width: 385px;
         height: 75px;
         margin-top: 123px;
-     }
-     .server div{
-         cursor: pointer;
-     }
-     .server img{
-         height: 65px;
-         width: 65px;
-         float: left;
-     }
-     .server p{
-         width: 288px;
-         height: 75px;
-         font-size: 18px;
-         font-family: SourceHanSansSC, SourceHanSansSC;
-         font-weight: 400;
-         color: #FFFFFF;
-         line-height: 28px;
-         float: left;
-         margin-left: 30px;
-         margin-top: 16px;
-     }
+    }
+
+    .server div {
+        cursor: pointer;
+    }
+
+    .server img {
+        height: 65px;
+        width: 65px;
+        float: left;
+    }
+
+    .server p {
+        width: 288px;
+        height: 75px;
+        font-size: 18px;
+        font-family: SourceHanSansSC, SourceHanSansSC;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 28px;
+        float: left;
+        margin-left: 30px;
+        margin-top: 16px;
+    }
 </style>
