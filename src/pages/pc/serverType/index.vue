@@ -5,7 +5,7 @@
             <slider v-model="sliderValue" :autoplay='false' animation="fade" height="700px">
                 <slider-item>
                     <div class="silde sildeList silde2">
-                        <div class="silde_mengban" style="padding-top: 170px;">
+                        <div class="silde_mengban">
                             <!-- <p>{{$t('行业经验')}}</p> -->
                             <p>{{$t("会计咨询服务")}}</p>
                         </div>
@@ -14,7 +14,7 @@
                 </slider-item>
                 <slider-item>
                     <div class="silde sildeList silde3">
-                        <div class="silde_mengban" style="padding-top: 170px;">
+                        <div class="silde_mengban">
                             <!-- <p>{{$t('行业经验')}}</p> -->
                             <p>{{$t('IPO财务顾问服务')}}</p>
                         </div>
@@ -23,7 +23,7 @@
                 </slider-item>
                 <slider-item>
                     <div class="silde sildeList silde4">
-                        <div class="silde_mengban" style="padding-top: 170px;">
+                        <div class="silde_mengban">
                             <!-- <p>{{$t('行业经验')}}</p> -->
                             <p>{{$t("兼并和收购咨询服务")}}</p>
                         </div>
@@ -32,7 +32,7 @@
                 </slider-item>
                 <slider-item>
                     <div class="silde sildeList silde4">
-                        <div class="silde_mengban" style="padding-top: 170px;">
+                        <div class="silde_mengban">
                             <!-- <p>{{$t('行业经验')}}</p> -->
                             <p>{{$t('上市公司金融监管咨询服务')}}</p>
                         </div>
@@ -356,6 +356,8 @@
         align-items: center;
         flex-direction: column;
         text-align: left;
+        justify-content:center;
+        
     }
 
     .silde1 {
@@ -397,6 +399,7 @@
         color: #FFFFFF;
         /* line-height: 51px; */
         text-align: center;
+        margin-top: -100px;
     }
 
     .sildeList span {

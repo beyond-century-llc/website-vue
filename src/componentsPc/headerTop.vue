@@ -20,9 +20,12 @@
                 <div style="position: relative;" @click="serverType()" >
                     <p>{{$t('服务类型')}}</p>
                     <span v-if="routerActive == 4 "></span>
-                    <div class="tabbarList" id="tabbarList" v-if="routerActive == 4 && showServer">
+                    <div class="tabbarList" 
+                    :style="{width:$i18n.locale=='zh-CN'?'300px':'400px'}"
+                     id="tabbarList" v-if="routerActive == 4 && showServer">
                         <div @click="changePath(4,'serverType',0)">
                             {{$t('会计咨询服务')}}
+                            
                         </div>
                         <div @click="changePath(4,'serverType',1)">
                             {{$t('IPO财务顾问服务')}}
