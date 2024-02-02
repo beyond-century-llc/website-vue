@@ -1,75 +1,80 @@
 <template>
-    <div class="headerTop">
-        <div class="content">
-            <div class="logo" @click="changePath(0,'mobileHome')">
-                <img src="./../assets/mobile/logo.jpg" alt="" />
-            </div>
-            <div class="title">
-                {{title}}
-            </div>
-            
-            <div class="retract">
-                <div class="changeLang" @click="languageChange">
-                    <img src="./../assets/mobile/icon_language_blue.png" alt="" />
-                    <!-- <span>us</span> -->
-                </div>
-                
-                <img class="icon_retract"  @click="retractChange" src="./../assets/mobile/icon_retract.png" alt="" />
-            </div>
-        </div>
-       
-        <div class="tabbar tabbar1"  v-if="showChange">
-            <div class="list" :class="[routerActive==0?'active':'']" @click="changePath(0,'mobileHome')" >
-                <p>{{$t('首页')}}</p>
-                <img v-if="routerActive==0" src="./../assets/mobile/icon_yes_white.png" alt="">
-            </div>
-            <div class="list" :class="[routerActive==1?'active':'']" @click="changePath(1,'mobileAbout')" >
-                <p>{{$t('关于卓越')}}</p>
-                <img  v-if="routerActive==1"  src="./../assets/mobile/icon_yes_white.png" alt="">
-            </div>
-            <div class="list" :class="[routerActive==2?'active':'']" @click="changePath(2,'mobileServer')" >
-                <p>{{$t('服务宗旨')}}</p>
-                <img  v-if="routerActive==2"  src="./../assets/mobile/icon_yes_white.png" alt="">
-            </div>
-            <div class="list" :class="[routerActive==3?'active':'']" @click="serverType()" style="display: inline-block;">
-                <p style="height: 70px;line-height: 70px;" >{{$t('服务类型')}}</p>
-                <!-- <img  v-if="routerActive==3"  src="./../assets/mobile/icon_yes_white.png" alt=""> -->
-                <div class="tabbarList" v-if="routerActive == 3">
-                    <div @click="changePath(3,'mobileServerType',2)">
-                        {{$t('会计咨询服务')}}
+    <div class="header">
+        <div class="space"></div>
+        <div class="top">
+            <div class="headerTop">
+                <div class="content">
+                    <div class="logo" @click="changePath(0,'mobileHome')">
+                        <img src="./../assets/mobile/logo.jpg" alt="" />
                     </div>
-                    <div @click="changePath(3,'mobileServerType',3)">
-                        {{$t("IPO财务顾问服务")}}
+                    <div class="title">
+                        {{title}}
                     </div>
-                    <div @click="changePath(3,'mobileServerType',4)">
-                        {{$t('兼并和收购咨询服务')}}
-                    </div>
-                    <div @click="changePath(3,'mobileServerType',5)">
-                        {{$t('上市公司金融监管咨询服务')}}
+                    
+                    <div class="retract">
+                        <div class="changeLang" @click="languageChange">
+                            <img src="./../assets/mobile/icon_language_blue.png" alt="" />
+                            <!-- <span>us</span> -->
+                        </div>
+                        
+                        <img class="icon_retract"  @click="retractChange" src="./../assets/mobile/icon_retract.png" alt="" />
                     </div>
                 </div>
+               
+                <div class="tabbar tabbar1"  v-if="showChange">
+                    <div class="list" :class="[routerActive==0?'active':'']" @click="changePath(0,'mobileHome')" >
+                        <p>{{$t('首页')}}</p>
+                        <img v-if="routerActive==0" src="./../assets/mobile/icon_yes_white.png" alt="">
+                    </div>
+                    <div class="list" :class="[routerActive==1?'active':'']" @click="changePath(1,'mobileAbout')" >
+                        <p>{{$t('关于卓越')}}</p>
+                        <img  v-if="routerActive==1"  src="./../assets/mobile/icon_yes_white.png" alt="">
+                    </div>
+                    <div class="list" :class="[routerActive==2?'active':'']" @click="changePath(2,'mobileServer')" >
+                        <p>{{$t('服务宗旨')}}</p>
+                        <img  v-if="routerActive==2"  src="./../assets/mobile/icon_yes_white.png" alt="">
+                    </div>
+                    <div class="list" :class="[routerActive==3?'active':'']" @click="serverType()" style="display: inline-block;">
+                        <p style="height: 70px;line-height: 70px;" >{{$t('服务类型')}}</p>
+                        <!-- <img  v-if="routerActive==3"  src="./../assets/mobile/icon_yes_white.png" alt=""> -->
+                        <div class="tabbarList" v-if="routerActive == 3">
+                            <div @click="changePath(3,'mobileServerType',2)">
+                                {{$t('会计咨询服务')}}
+                            </div>
+                            <div @click="changePath(3,'mobileServerType',3)">
+                                {{$t("IPO财务顾问服务")}}
+                            </div>
+                            <div @click="changePath(3,'mobileServerType',4)">
+                                {{$t('兼并和收购咨询服务')}}
+                            </div>
+                            <div @click="changePath(3,'mobileServerType',5)">
+                                {{$t('上市公司金融监管咨询服务')}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" :class="[routerActive==4?'active':'']" @click="changePath(4,'mobileMember')" >
+                        <p>{{$t('主要成员')}}</p>
+                        <img  v-if="routerActive==4"  src="./../assets/mobile/icon_yes_white.png" alt="">
+                    </div>
+                    <div class="list" :class="[routerActive==5?'active':'']" @click="changePath(5,'mobileContact')" >
+                        <p>{{$t('联系我们')}}</p>
+                        <img  v-if="routerActive==5"  src="./../assets/mobile/icon_yes_white.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class="tabbar" v-if="changeLang">
+                    <div class="list" :class="[langActive==0?'active':'']" @click="changeLanguage(0,'zh-CN')" >
+                        <p>中文</p>
+                        <img v-if="langActive==0" src="./../assets/mobile/icon_yes_white.png" alt="">
+                    </div>
+                    <div class="list" :class="[langActive==1?'active':'']" @click="changeLanguage(1,'en-US')" >
+                        <p>English</p>
+                        <img  v-if="langActive==1"  src="./../assets/mobile/icon_yes_white.png" alt="">
+                    </div>
+                    
+                    
+                </div>
             </div>
-            <div class="list" :class="[routerActive==4?'active':'']" @click="changePath(4,'mobileMember')" >
-                <p>{{$t('主要成员')}}</p>
-                <img  v-if="routerActive==4"  src="./../assets/mobile/icon_yes_white.png" alt="">
-            </div>
-            <div class="list" :class="[routerActive==5?'active':'']" @click="changePath(5,'mobileContact')" >
-                <p>{{$t('联系我们')}}</p>
-                <img  v-if="routerActive==5"  src="./../assets/mobile/icon_yes_white.png" alt="">
-            </div>
-            
-        </div>
-        <div class="tabbar" v-if="changeLang">
-            <div class="list" :class="[langActive==0?'active':'']" @click="changeLanguage(0,'zh-CN')" >
-                <p>中文</p>
-                <img v-if="langActive==0" src="./../assets/mobile/icon_yes_white.png" alt="">
-            </div>
-            <div class="list" :class="[langActive==1?'active':'']" @click="changeLanguage(1,'en-US')" >
-                <p>English</p>
-                <img  v-if="langActive==1"  src="./../assets/mobile/icon_yes_white.png" alt="">
-            </div>
-            
-            
         </div>
     </div>
 </template>
@@ -189,6 +194,16 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    .space{
+        width: 100%;
+        height: 88px;
+    }
+    .top{
+        width: 100%;
+        height: 88px;
+        position: fixed;
+        top: 0;
+    }
     .headerTop {
         width: 100%;
         height: 88px;

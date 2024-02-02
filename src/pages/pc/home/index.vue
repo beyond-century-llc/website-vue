@@ -175,7 +175,7 @@
 
     .banner {
         /* width: 100%; */
-        height: 100%;
+        height: 80%;
         background-image: url('../../../assets/img/bg_ship_home.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -185,7 +185,7 @@
 
     .banner .logo {
         width: 347px;
-        height: 194px;
+        /* height: 194px; */
         /* margin: 0 auto; */
         margin-left: 200px;
     }

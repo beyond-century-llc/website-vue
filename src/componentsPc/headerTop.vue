@@ -1,74 +1,79 @@
 <template>
-    <div class="headerTop">
-        <div class="content">
-            <div class="logo"   @click="changePath(1,'Home')">
-                <img src="./../assets/img/icon_logo_zhuo.png" alt="" />
-            </div>
-            <div class="tabbar">
-                <div @click="changePath(1,'Home')">
-                    <p>{{$t('首页')}}</p>
-                    <span v-if="routerActive == 1"></span>
+    <div class="header">
+        <div class="space">
+            
+        </div>
+        <div class="headerTop">
+            <div class="content">
+                <div class="logo"   @click="changePath(1,'Home')">
+                    <img src="./../assets/img/icon_logo_zhuo.png" alt="" />
                 </div>
-                <div @click="changePath(2,'about')">
-                    <p>{{$t('关于卓越')}}</p>
-                    <span v-if="routerActive == 2"></span>
-                </div>
-                <!-- <div @click="changePath(3,'server')">
-                    <p>{{$t('服务宗旨')}}</p>
-                    <span v-if="routerActive == 3"></span>
-                </div> -->
-                <div style="position: relative;" @click="serverType()" >
-                    <p>{{$t('服务类型')}}</p>
-                    <span v-if="routerActive == 4 "></span>
-                    <div class="tabbarList" 
-                    :style="{width:$i18n.locale=='zh-CN'?'300px':'400px'}"
-                     id="tabbarList" v-if="routerActive == 4 && showServer">
-                        <div @click="changePath(4,'serverType',0)">
-                            {{$t('会计咨询服务')}}
-                        </div>
-                        <div @click="changePath(4,'serverType',1)">
-                            {{$t('IPO财务顾问服务')}}
-                        </div>
-                        <div @click="changePath(4,'serverType',2)">
-                            {{$t("兼并和收购咨询服务")}}
-                        </div>
-                        <div @click="changePath(4,'serverType',3)">
-                            {{$t('上市公司金融监管咨询服务')}}
-                        </div>
-
-
+                <div class="tabbar">
+                    <div @click="changePath(1,'Home')">
+                        <p>{{$t('首页')}}</p>
+                        <span v-if="routerActive == 1"></span>
                     </div>
+                    <div @click="changePath(2,'about')">
+                        <p>{{$t('关于卓越')}}</p>
+                        <span v-if="routerActive == 2"></span>
+                    </div>
+                    <!-- <div @click="changePath(3,'server')">
+                        <p>{{$t('服务宗旨')}}</p>
+                        <span v-if="routerActive == 3"></span>
+                    </div> -->
+                    <div style="position: relative;" @click="serverType()" >
+                        <p>{{$t('服务类型')}}</p>
+                        <span v-if="routerActive == 4 "></span>
+                        <div class="tabbarList" 
+                        :style="{width:$i18n.locale=='zh-CN'?'300px':'390px'}"
+                         id="tabbarList" v-if="routerActive == 4 && showServer">
+                            <div @click="changePath(4,'serverType',0)">
+                                {{$t('会计咨询服务')}}
+                            </div>
+                            <div @click="changePath(4,'serverType',1)">
+                                {{$t('IPO财务顾问服务')}}
+                            </div>
+                            <div @click="changePath(4,'serverType',2)">
+                                {{$t("兼并和收购咨询服务")}}
+                            </div>
+                            <div @click="changePath(4,'serverType',3)">
+                                {{$t('上市公司金融监管咨询服务')}}
+                            </div>
+        
+        
+                        </div>
+                    </div>
+                    <div @click="changePath(5,'member')">
+                        <p>{{$t('主要成员')}}</p>
+                        <span v-if="routerActive == 5"></span>
+                    </div>
+                    <div @click="changePath(6,'contact')">
+                        <p>{{$t('联系我们')}}</p>
+                        <span v-if="routerActive == 6"></span>
+                    </div>
+        
                 </div>
-                <div @click="changePath(5,'member')">
-                    <p>{{$t('主要成员')}}</p>
-                    <span v-if="routerActive == 5"></span>
+                <div class="changeLang" id="changeLang" @click="show()" >
+                    <img class="language" src="./../assets/img/icon_language_blue.png" alt="" />
+                    <img class="downward" src="./../assets/img/icon_downward_blue.png" alt="" />
                 </div>
-                <div @click="changePath(6,'contact')">
-                    <p>{{$t('联系我们')}}</p>
-                    <span v-if="routerActive == 6"></span>
+                <div class="changeBox" id="changeBox" v-if="showChange">
+                    <!-- <div class="changeListc">
+                        <span>选择您想阅读的语言</span>
+                        <img class="error" @click="showChange=false" src="./../assets/img/icon_error_black.png" alt="" />
+                    </div> -->
+                    <div class="changeListc" :class="[active==0?'active':'']" @click="changeLanguage(0,'zh-CN')">
+                        <span>中文</span>
+                        <img class="yes" src="./../assets/img/icon_yes_white.png" alt="" />
+                    </div>
+                    <div class="changeListc" :class="[active==1?'active':'']" @click="changeLanguage(1,'en-US')">
+                        <span>English</span>
+                        <img class="yes" src="./../assets/img/icon_yes_white.png" alt="" />
+                    </div>
+        
+        
+        
                 </div>
-
-            </div>
-            <div class="changeLang" id="changeLang" @click="show()" >
-                <img class="language" src="./../assets/img/icon_language_blue.png" alt="" />
-                <img class="downward" src="./../assets/img/icon_downward_blue.png" alt="" />
-            </div>
-            <div class="changeBox" id="changeBox" v-if="showChange">
-                <!-- <div class="changeListc">
-                    <span>选择您想阅读的语言</span>
-                    <img class="error" @click="showChange=false" src="./../assets/img/icon_error_black.png" alt="" />
-                </div> -->
-                <div class="changeListc" :class="[active==0?'active':'']" @click="changeLanguage(0,'zh-CN')">
-                    <span>中文</span>
-                    <img class="yes" src="./../assets/img/icon_yes_white.png" alt="" />
-                </div>
-                <div class="changeListc" :class="[active==1?'active':'']" @click="changeLanguage(1,'en-US')">
-                    <span>English</span>
-                    <img class="yes" src="./../assets/img/icon_yes_white.png" alt="" />
-                </div>
-
-
-
             </div>
         </div>
     </div>
@@ -203,10 +208,18 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    .space{
+        width: 100%;
+        height: 64px;
+        background: #0A1B2F;
+    }
     .headerTop {
         width: 100%;
         height: 64px;
         background: #0A1B2F;
+        position: fixed;
+        top: 0;
+        
     }
 
     .content {

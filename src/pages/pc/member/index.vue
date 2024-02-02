@@ -72,7 +72,7 @@
                     name: "Susan Woo, CPA",
                     headerImg: require('./../../../assets/headerImg/susan.png'),
                     info: this.$t('Susan'),
-                    duties:"Director"
+                    duties:"Partner"
                 },
                 slides: [{
                         id: 1,
