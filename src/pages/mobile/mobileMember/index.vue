@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        <mobileHeader title='主要成员'></mobileHeader>
+        <mobileHeader :title='$t("主要成员")'></mobileHeader>
         <div class="page_menmber">
             <div class='silderImg' @click="changeSilder">
                 <img src="./../../../assets/mobile/icon_nest.png" alt="" />
@@ -15,8 +15,11 @@
                         </div>
                         <div class="memberName">
                             <div class="name">
-                                <img src="./../../../assets/headerImg/susan.png" alt="" />
-                                <p>Susan Woo, CPA</p>
+                                <img src="./../../../assets/headerImg/susan.png" alt="" style="float: left;" />
+                                <div style="float: left;">
+                                    <p style="display: block;">Susan Woo, CPA</p>
+                                    <span style="display: block;margin-left: 15px;">Partner</span>
+                                </div>
                             </div>
                             <div class="introduce">
                                 {{$t('Susan')}}
@@ -32,9 +35,16 @@
                             <img src="./../../../assets/headerImg/xiajia.png" alt="" />
                         </div>
                         <div class="memberName">
-                            <div class="name">
+                            <!-- <div class="name">
                                 <img src="./../../../assets/headerImg/xiajia.png" alt="" />
                                 <p>夏佳 Jia Xia, CPA</p>
+                            </div> -->
+                            <div class="name">
+                                <img src="./../../../assets/headerImg/susan.png" alt="" style="float: left;" />
+                                <div style="float: left;">
+                                    <p style="display: block;">夏佳 Jia Xia, CPA</p>
+                                    <span style="display: block;margin-left: 15px;">Director</span>
+                                </div>
                             </div>
                             <div class="introduce">
                                 {{$t('xiajia')}}
@@ -52,9 +62,16 @@
                             <img src="./../../../assets/headerImg/Miranda-Suen.png" alt="" />
                         </div>
                         <div class="memberName">
-                            <div class="name">
+                            <!-- <div class="name">
                                 <img src="./../../../assets/headerImg/Miranda-Suen.png" alt="" />
                                 <p>Miranda Sun, CPA</p>
+                            </div> -->
+                            <div class="name">
+                                <img src="./../../../assets/headerImg/susan.png" alt="" style="float: left;" />
+                                <div style="float: left;">
+                                    <p style="display: block;">Miranda Sun, CPA</p>
+                                    <span style="display: block;margin-left: 15px;">Partner</span>
+                                </div>
                             </div>
                             <div class="introduce">
                                 {{$t('Miranda')}}
@@ -69,9 +86,16 @@
                             <img src="./../../../assets/headerImg/Raymond-Choy.png" alt="" />
                         </div>
                         <div class="memberName">
-                            <div class="name">
+                            <!-- <div class="name">
                                 <img src="./../../../assets/headerImg/Raymond-Choy.png" alt="" />
                                 <p>Raymond Choy,CPA, CGMA</p>
+                            </div> -->
+                            <div class="name">
+                                <img src="./../../../assets/headerImg/susan.png" alt="" style="float: left;" />
+                                <div style="float: left;">
+                                    <p style="display: block;">Raymond Choy,CPA, CGMA</p>
+                                    <span style="display: block;margin-left: 15px;">Partner</span>
+                                </div>
                             </div>
                             <div class="introduce">
                                 {{$t('Raymond')}}
@@ -139,7 +163,7 @@
 
     .page_menmber .silderImg {
         position: absolute;
-        top: 692px;
+        top: 792px;
         right: 40px;
         width: 100px;
         height: 100px;
@@ -156,7 +180,7 @@
 
     .item .memberImg {
         width: 100%;
-        height: 806px;
+        height: 906px;
 
     }
 
@@ -173,14 +197,15 @@
     }
 
     .item .memberName .name {
-        display: flex;
-
+        /* display: flex; */
+display: inline-block;
     }
 
     .item .memberName .name img {
         width: 80px;
         height: 80px;
         border-radius: 50%;
+        margin-top: 20px;
     }
 
     .item .memberName .name p {
@@ -188,7 +213,7 @@
         font-size: 36px;
         font-family: PingFangSC, PingFang SC;
         font-weight: 500;
-        color: #0A1B2F;
+        color: #d86129;
         line-height: 50px;
         margin-left: 22px;
         margin-top: 16px;

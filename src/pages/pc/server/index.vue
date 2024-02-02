@@ -13,7 +13,7 @@
                     <div class="list" style="margin-left: 0px;">Diligence</div>
                     <div class="list" style="margin-left: 28px;">Excellence</div>
                     <div class="list" style="margin-left: 28px;">Honesty</div>
-                    <div class="list" style="margin-left: 85px;">Professionalism</div>
+                    <!-- <div class="list" style="margin-left: 85px;">Professionalism</div> -->
                     <div class="list" style="margin-left: 28px;">Professionalism</div>
                     <div class="list" style="margin-left: 28px;">Integrity</div>
                     <div class="list" style="margin-left: 28px;">Innovative</div>

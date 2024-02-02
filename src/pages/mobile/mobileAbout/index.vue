@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        <mobileHeader :title='$t("关于卓越")'></mobileHeader>
+        <mobileHeader :title="$t('关于卓越')"></mobileHeader>
         <div class="page_about">
             <div class="list">
                 <div class="list_img">
@@ -170,12 +170,12 @@
     .page_about .list .list_text .list_context {
 
         font-size: 24px;
-        font-family: LastResort,PingFangSC, PingFang SC;;
+        font-family: SourceHanSansSC, SourceHanSansSC;
         color: #BABEC9;
         line-height: 26px;
         letter-spacing: 2px;
     }
     .page_about .list .list_text .list_context p{
-         font-family: PingFangSC, PingFang SC;
+         font-family: SourceHanSansSC, SourceHanSansSC;
     }
 </style>

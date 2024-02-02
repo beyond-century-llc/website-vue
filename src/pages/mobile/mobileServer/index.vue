@@ -6,26 +6,28 @@
                 <div class="img">
                     <img src="./../../../assets/mobileServer/server1.png" alt="" />
                     <div class="customList">
-                        <div class="list" style="margin-left: 28px;">Above and Beyond</div>
-                        <div class="list" style="margin-left: 28px;">Accountability</div>
-                        <div class="list" style="margin-left: 28px;">Accurate</div>
-                        <div class="list" style="margin-left: 28px;">Capability</div>
-                        <div class="list" style="margin-left: 28px;">Dependability</div>
-                        <div class="list" style="margin-left: 28px;">Devotion</div>
-                        <div class="list" style="margin-left: 28px;">Diligence</div>
-                        <div class="list" style="margin-left: 28px;">Excellence</div>
-                        <div class="list" style="margin-left: 28px;">Honesty</div>
-                        <div class="list" style="margin-left: 28px;">Professionalism</div>
-                        <div class="list" style="margin-left: 28px;">Professionalism</div>
-                        <div class="list" style="margin-left: 28px;">Integrity</div>
-                        <div class="list" style="margin-left: 28px;">Innovative</div>
-                        <div class="list" style="margin-left: 28px;">Reliability</div>
-                        <div class="list" style="margin-left: 28px;">Responsibility</div>
+                        
+                        
+                        <div class="list" style="margin-left: 28px;">{{$t('超越卓越')}}</div>
+                        <div class="list" style="margin-left: 28px;">{{$t('责任')}}</div>
+                        <div class="list" style="margin-left: 28px;">{{$t('准确')}}</div>
+                        <div class="list" style="margin-left: 28px;">{{$t('能力')}}</div>
+                        <div class="list" style="margin-left: 28px;">{{$t('可靠')}}</div>
+                        <div class="list" style="margin-left: 28px;">{{$t('热爱')}}</div>
+                        <div class="list" style="margin-left: 28px;">{{$t('勤勉')}}</div>
+                        <div class="list" style="margin-left: 28px;">{{$t('优质')}}</div>
+                        <div class="list" style="margin-left: 28px;">{{$t('诚实')}}</div>
+                        <!-- <div class="list" style="margin-left: 85px;">Professionalism</div> -->
+                        <div class="list" style="margin-left: 28px;">{{$t('专业')}}</div>
+                        <div class="list" style="margin-left: 28px;">{{$t('守信')}}</div>
+                        <div class="list" style="margin-left: 28px;">{{$t('创新')}}</div>
+                        <div class="list" style="margin-left: 28px;">{{$t('洞察')}}</div>
+                        <!-- <div class="list" style="margin-left: 28px;">{{$t('责任')}}</div> -->
                         <!-- <div class="list" style="margin-left: 28px;">Core Values</div> -->
-                        <div class="list" style="margin-left: 28px;">Trustworthy</div>
+                        <div class="list" style="margin-left: 28px;">{{$t('信赖')}}</div>
                     </div>
                 </div>
-                <div class="text">
+                <!-- <div class="text">
                     <div class="introduce">
                         {{$t('行业经验')}}
                     </div>
@@ -40,7 +42,7 @@
                         <br>
                         {{$t('提供超出预期的服务')}}
                     </div>
-                </div>
+                </div> -->
             </div>
            
         </div>
@@ -282,11 +284,11 @@
 
 
     .yatai {
-        width: 686px;
+        /* width: 686px; */
         height: 1150px;
         background: #FFFFFF;
-        box-shadow: 0px 4px 15px 0px rgba(204, 204, 204, 0.4);
-        border-radius: 0px 0px 60px 0px;
+       /* box-shadow: 0px 4px 15px 0px rgba(204, 204, 204, 0.4);
+        border-radius: 0px 0px 60px 0px; */
         margin: 0 auto;
         margin-bottom: 5px;
     }

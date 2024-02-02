@@ -8,9 +8,9 @@
                     <img src="./../../../assets/mobileServer/server2.png" alt="" />
                 </div>
                 <div class="text">
-                    <div class="introduce">
+                    <!-- <div class="introduce">
                         {{$t('行业经验')}}
-                    </div>
+                    </div> -->
                     <div class="name">
                         <p>
                             {{$t("会计咨询服务")}}
@@ -26,19 +26,48 @@
                             ...{{$t('点击阅读全文')}}
                         </span>
                         <span class="content" v-if="experience1">
-                            {{$t('协助和支持建立会计系统')}}
-                            </br>
-                            {{$t('分析和评估重要和')}}
-                            </br>
-                            {{$t('研究美国公认会计准则')}}
-                            </br>
-                            {{$t('中国会计准则')}}
-                            </br>
-                            {{$t('转换美国公认会计准则')}}
-                            </br>
-                            {{$t('协助企业进行资产及股权重组')}}
-                            </br>
-                            {{$t("为企业提供分析报告和管理建议")}}
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('协助和支持建立会计系统')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('分析和评估重要和')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('研究美国公认会计准则')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('中国会计准则')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('根据美国公认会计准则或国际财务报告准则编制财务报表并进行披露')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('协助企业进行资产及股权重组')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t("为企业提供分析报告和管理建议")}}
+                                </span>
+                            </div>
                         </span>
 
                     </div>
@@ -49,12 +78,12 @@
                     <img src="./../../../assets/mobileServer/server3.png" alt="" />
                 </div>
                 <div class="text">
-                    <div class="introduce">
+                    <!-- <div class="introduce">
                         {{$t('行业经验')}}
-                    </div>
+                    </div> -->
                     <div class="name">
                         <p>
-                            {{$t('IPO财务咨询服务')}}
+                            {{$t('IPO财务顾问服务')}}
                         </p>
                         <img src="./../../../assets/mobile/icon_good_blue.png" alt="" />
                     </div>
@@ -67,19 +96,48 @@
                             ...{{$t('点击阅读全文')}}
                         </span>
                         <span class="content" v-if="experience2">
-                            {{$t('制定企业改制总体方案和上市前方案')}}
-                            </br>
-                            {{$t('为企业提供企业资产管理')}}
-                            </br>
-                            {{$t('推荐保荐人')}}
-                            </br>
-                            {{$t('保荐机构')}}
-                            </br>
-                            {{$t('培养高级管理人员')}}
-                            </br>
-                            {{$t("提供审核员评估")}}
-                            </br>
-                            {{$t("协助招股说明书的起草和尽职调查")}}
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('制定企业改制总体方案和上市前方案')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('为企业提供企业资产管理')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('推荐保荐人')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('保荐机构')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('培养高级管理人员')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('提供审核员评估')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('协助招股说明书的起草和尽职调查')}}
+                                </span>
+                            </div>
                         </span>
 
                     </div>
@@ -90,9 +148,9 @@
                     <img src="./../../../assets/mobileServer/server4.png" alt="" />
                 </div>
                 <div class="text">
-                    <div class="introduce">
+                    <!-- <div class="introduce">
                         {{$t('行业经验')}}
-                    </div>
+                    </div> -->
                     <div class="name">
                         <p>
                             {{$t("兼并和收购咨询服务")}}
@@ -102,20 +160,60 @@
                     <div class="server">
                         <span class="content">
                             {{$t('我们的并购实践团队将在每一次交易中充当保驾护航的角色')}}</br>
-                            {{$t('对目标公司进行尽职调查')}}</br>
-                            {{$t('作为买方代理策划')}}</br>
-                            {{$t('作为卖方代理实施反兼并措施')}}
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('对目标公司进行尽职调查')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('作为买方代理策划')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('作为卖方代理实施反兼并措施')}}
+                                </span>
+                            </div>
                         </span>
                         <span class="more" v-if="!experience3" @click="experience3 = true">
                             ...{{$t('点击阅读全文')}}
                         </span>
                         <span class="content" v-if="experience3">
 
-                            {{$t('保护客户在目标公司及其股东中的利益')}}</br>
-                            {{$t('组建采购小组并制定工作计划')}}</br>
-                            {{$t('参与谈判并确定并购条件')}}</br>
-                            {{$t('组织协调会计师事务所')}}</br>
-                            {{$t('协助当事人获取相关文件')}}</br>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('保护客户在目标公司及其股东中的利益')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('组建采购小组并制定工作计划')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('参与谈判并确定并购条件')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('组织协调会计师事务所')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('协助当事人获取相关文件')}}
+                                </span>
+                            </div>
                         </span>
 
                     </div>
@@ -126,9 +224,9 @@
                     <img src="./../../../assets/mobileServer/server5.png" alt="" />
                 </div>
                 <div class="text">
-                    <div class="introduce">
+                    <!-- <div class="introduce">
                         {{$t('行业经验')}}
-                    </div>
+                    </div> -->
                     <div class="name">
                         <p>
                             {{$t('上市公司金融监管咨询服务')}}
@@ -147,11 +245,36 @@
                             ...{{$t('点击阅读全文')}}
                         </span>
                         <span class="content" v-if="experience4">
-                            {{$t('协助公司准备所有财务相关数据')}}</br>
-                            {{$t('财政报表年度性和季度性审查')}}</br>
-                            {{$t('塞班斯')}}</br>
-                            {{$t('帮助公司遵守并遵守美国证券交易委员会的法规')}}</br>
-                            {{$t('评估建立和实施内部控制体系')}}</br>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('协助公司准备所有财务相关数据')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('财政报表年度性和季度性审查')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('塞班斯')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('帮助公司遵守并遵守美国证券交易委员会的法规')}}
+                                </span>
+                            </div>
+                            <div class="customListText">
+                                <span>➤</span>
+                                <span>
+                                    {{$t('评估建立和实施内部控制体系')}}
+                                </span>
+                            </div>
                         </span>
 
 
@@ -256,6 +379,16 @@
 
             }
         },
+        watch: { // 监听,当路由发生变化的时候执行
+            '$route': { // $route可以用引号，也可以不用引号
+                handler(to, from) {
+                    // console.log(33)
+                    this.active = this.$route.query.userType || 2
+                },
+                deep: true, // 深度观察监听
+                immediate: true, // 第一次初始化渲染就可以监听到
+            }
+        },
         methods: {
 
         },
@@ -270,7 +403,10 @@
         width: 100%;
 
     }
-
+    .customListText {
+        display: flex;
+    }
+    
     .page_menmber {}
 
     .tabber {

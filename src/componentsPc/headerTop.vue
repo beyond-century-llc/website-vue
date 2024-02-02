@@ -1,7 +1,7 @@
 <template>
     <div class="headerTop">
         <div class="content">
-            <div class="logo">
+            <div class="logo"   @click="changePath(1,'Home')">
                 <img src="./../assets/img/icon_logo_zhuo.png" alt="" />
             </div>
             <div class="tabbar">
@@ -13,14 +13,14 @@
                     <p>{{$t('关于卓越')}}</p>
                     <span v-if="routerActive == 2"></span>
                 </div>
-                <div @click="changePath(3,'server')">
+                <!-- <div @click="changePath(3,'server')">
                     <p>{{$t('服务宗旨')}}</p>
                     <span v-if="routerActive == 3"></span>
-                </div>
-                <div style="position: relative;" @click="serverType()">
+                </div> -->
+                <div style="position: relative;" @click="serverType()" >
                     <p>{{$t('服务类型')}}</p>
                     <span v-if="routerActive == 4 "></span>
-                    <div class="tabbarList" v-if="routerActive == 4 && showServer">
+                    <div class="tabbarList" id="tabbarList" v-if="routerActive == 4 && showServer">
                         <div @click="changePath(4,'serverType',0)">
                             {{$t('会计咨询服务')}}
                         </div>
@@ -33,8 +33,8 @@
                         <div @click="changePath(4,'serverType',3)">
                             {{$t('上市公司金融监管咨询服务')}}
                         </div>
-                        
-                         
+
+
                     </div>
                 </div>
                 <div @click="changePath(5,'member')">
@@ -47,15 +47,15 @@
                 </div>
 
             </div>
-            <div class="changeLang" @click="showChange = !showChange">
+            <div class="changeLang" id="changeLang" @click="show()" >
                 <img class="language" src="./../assets/img/icon_language_blue.png" alt="" />
                 <img class="downward" src="./../assets/img/icon_downward_blue.png" alt="" />
             </div>
-            <div class="changeBox" v-if="showChange">
-                <div class="changeListc">
+            <div class="changeBox" id="changeBox" v-if="showChange">
+                <!-- <div class="changeListc">
                     <span>选择您想阅读的语言</span>
                     <img class="error" @click="showChange=false" src="./../assets/img/icon_error_black.png" alt="" />
-                </div>
+                </div> -->
                 <div class="changeListc" :class="[active==0?'active':'']" @click="changeLanguage(0,'zh-CN')">
                     <span>中文</span>
                     <img class="yes" src="./../assets/img/icon_yes_white.png" alt="" />
@@ -74,34 +74,106 @@
 
 <script>
     import lange from '../lang/zh-CN'
+    import vClickOutside from 'v-click-outside'
+    const {
+        bind,
+        unbind
+    } = vClickOutside.directive;
+
+
     export default {
         name: 'headerTop',
         props: {
             msg: String
         },
+        // directives: {
+        //     clickOutside: vClickOutside.directive
+        // },
         data() {
             return {
                 showChange: false,
                 active: localStorage.getItem('langActive') || 0,
                 routerActive: localStorage.getItem('routerIndex') || 1,
-                showServer:false,
+                showServer: false,
             }
         },
+        beforeDestroy() {
+            if (this._el) {
+                unbind(this._el);
+            }
+        },
+        // render(h) {
+        //     return this.$scopedSlots.default({
+        //         props: {
+        //             // we can't pass vue a ref attrubute up, as in we can
+        //             // but will not be a vue $ref.
+        //             // That being said we'll always have the mightu DOM.
+        //             "data-rwco": true
+        //             // we also can't pass v-click-outside-here :(
+        //             // since it will be just an html attribute
+        //         },
+        //         listeners: {
+        //             click: this.handleClick
+        //         }
+        //     });
+        // }
         watch: {
 
         },
+        mounted() {
+            
+        },
         methods: {
-            serverType(){
-              this.routerActive = 4 
-              this.showServer = true;
+            
+            show(){
+                this.showChange = true;
+                if (this._el) {
+                    
+                    unbind(this._el);
+                }
+                this._el = document.querySelector(".changeLang");
+                // console.log(this._el,'this._el')
+                if (this._el) {
+                    bind(this._el, {
+                        value: this.changeLangOutsideClick
+                    });
+                }
             },
+            serverType() {
+                this.routerActive = 4
+                this.showServer = true;
+                
+                // console.log(this._el)
+                if (this._el) {
+                    
+                    unbind(this._el);
+                }
+               setTimeout(() => {
+                this._el = document.querySelector(".tabbarList");
+                console.log(this._el,'this._el')
+                if (this._el) {
+                    bind(this._el, {
+                        value: this.tabbarListOutsideClick
+                    });
+                }   
+               })
+            },
+            tabbarListOutsideClick(){
+                console.log('ccc')
+                this.showServer = false;
+            },
+            changeLangOutsideClick(){
+                // console.log(this.showChange,'33')
+                this.showChange = false;
+            },
+            
             changePath(index, path, type) {
-                console.log(index, path, type, 'index, path,type')
-               
+                // console.log(index, path, type, 'index, path,type')
+
                 this.$router.push({
                     name: path,
                     query: {
-                                userType: type
+                        userType: type
                     }
                 })
                 this.showServer = false
@@ -114,13 +186,13 @@
 
             },
             changeLanguage(index, type) {
-                console.log(index, 'changeLanguage')
+                // console.log(index, 'changeLanguage')
                 localStorage.setItem('langActive', index)
                 this.active = index
                 this.changeLang = !this.changeLang
 
                 this.$i18n.locale = type
-
+                this.showChange = false;
 
             }
         }

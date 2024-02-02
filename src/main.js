@@ -4,6 +4,11 @@ import router from './router'
 import VueI18n from 'vue-i18n'
 Vue.use(VueI18n)
 import messages from './lang/index'
+
+// import ClickOutside from 'v-click-outside';
+// Vue.directive('click-outside', ClickOutside);
+
+
 // import Carousel3d from 'vue3-carousel-3d';
 
 // import "vue3-carousel-3d/dist/index.css"

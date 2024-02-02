@@ -1,8 +1,8 @@
 <template>
     <div class="headerTop">
         <div class="content">
-            <div class="logo">
-                <img src="./../assets/mobile/mlogo.png" alt="" />
+            <div class="logo" @click="changePath(0,'mobileHome')">
+                <img src="./../assets/mobile/logo.jpg" alt="" />
             </div>
             <div class="title">
                 {{title}}
@@ -18,7 +18,7 @@
             </div>
         </div>
        
-        <div class="tabbar" v-if="showChange">
+        <div class="tabbar tabbar1"  v-if="showChange">
             <div class="list" :class="[routerActive==0?'active':'']" @click="changePath(0,'mobileHome')" >
                 <p>{{$t('首页')}}</p>
                 <img v-if="routerActive==0" src="./../assets/mobile/icon_yes_white.png" alt="">
@@ -76,6 +76,12 @@
 
 <script>
     import lange from '../lang/zh-CN'
+    import vClickOutside from 'v-click-outside'
+    const {
+        bind,
+        unbind
+    } = vClickOutside.directive;
+    
     export default {
         name: 'mobileHeader',
         props: {
@@ -92,21 +98,69 @@
         watch: {
 
         },
+        beforeDestroy() {
+            if (this._el) {
+                unbind(this._el);
+            }
+        },
         methods: {
+            routerGo(path){
+                this.$router.push({
+                    name: path,
+                   
+                })
+            },
             languageChange(){
                 this.changeLang = !this.changeLang;
                 this.showChange = false
+                
+                if (this._el) {
+                    
+                    unbind(this._el);
+                }
+               setTimeout(() => {
+                   this._el = document.querySelector(".tabbar");
+                   // console.log(this._el,'this._el')
+                   if (this._el) {
+                       bind(this._el, {
+                           value: this.changeLangOutsideClick
+                       });
+                   }
+               })
+                
+            },
+           
+            changeLangOutsideClick(){
+                // console.log('ccc')
+                this.changeLang = false;
             },
             retractChange(){
                 this.showChange = !this.showChange;
                 this.changeLang = false
+                if (this._el) {
+                    
+                    unbind(this._el);
+                }
+                setTimeout(() => {
+                    this._el = document.querySelector(".tabbar1");
+                    // console.log(this._el,'this._el')
+                    if (this._el) {
+                        bind(this._el, {
+                            value: this.tabbarListOutsideClick
+                        });
+                    }
+                })
+            },
+            tabbarListOutsideClick(){
+                // console.log('ccc')
+                this.showChange = false;
             },
             changePath(index, path,type) {
-
+                // console.log('type',type,path)
                 this.$router.push({
                     name: path,
                     query: {
-                                userType: type
+                        userType: type
                     }
                 })
                 // console.log(index,'indexindex')
@@ -122,9 +176,12 @@
                 this.changeLang = !this.changeLang
                 this.$i18n.locale = type
             },
+            
             serverType(){
               this.routerActive = 3
               this.showServer = true;
+              
+              
             },
         }
     }
@@ -147,8 +204,11 @@
         padding: 0 32px;
     }
     .content .logo {
-        width: 55px;
+        width: 100px;
         
+    }
+    .content .logo  img{
+        width: 100%;
     }
     .content .retract{
         width: 125px;

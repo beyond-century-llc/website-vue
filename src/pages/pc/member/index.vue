@@ -4,12 +4,18 @@
         <div class="page">
             <div class="memberInfo">
                 <div class="memberInfo_name">
-                    <img class="memberInfo_name_icon" src="./../../../assets/img/icon_head sculpture.png" alt="" />
-                    <p class="memberInfo_name_text">{{showInfo.name}}</p>
+                    <img class="memberInfo_name_icon" :src="showInfo.headerImg" alt="" />
+                   <div class="memberInfo_name_box">
+                       <p class="memberInfo_name_text">{{showInfo.name}}</p>
+                       <div class="memberInfo_duties">
+                           {{showInfo.duties}}
+                       </div>
+                   </div>
                 </div>
                 <div class="memberInfo_text">
                     {{showInfo.info}}
                 </div>
+                
             </div>
             <div class="memberInfo_list">
                 <div class="memberInfo_title">
@@ -65,31 +71,36 @@
                     id: 1,
                     name: "Susan Woo, CPA",
                     headerImg: require('./../../../assets/headerImg/susan.png'),
-                    info: this.$t('Susan')
+                    info: this.$t('Susan'),
+                    duties:"Director"
                 },
                 slides: [{
                         id: 1,
                         name: "Susan Woo, CPA",
                         headerImg: require('./../../../assets/headerImg/susan.png'),
-                        info: this.$t('Susan')
+                        info: this.$t('Susan'),
+                        duties:"Director"
                     },
                     {
                         id: 2,
                         name: "夏佳 Jia Xia, CPA",
                         headerImg: require('./../../../assets/headerImg/xiajia.png'),
-                        info: this.$t('xiajia')
+                        info: this.$t('xiajia'),
+                        duties:"Partner"
                     },
                     {
                         id: 3,
                         name: "Miranda Sun, CPA",
                         headerImg: require('./../../../assets/headerImg/Miranda-Suen.png'),
-                        info: this.$t('Miranda')
+                        info: this.$t('Miranda'),
+                        duties:"Partner"
                     },
                     {
                         id: 4,
                         name: "Raymond Choy, CPA, CGMA",
                         headerImg: require('./../../../assets/headerImg/Raymond-Choy.png'),
-                        info: this.$t('Raymond')
+                        info: this.$t('Raymond'),
+                        duties:"Partner"
                     },
 
                 ]
@@ -103,34 +114,34 @@
         },
         watch: {
             '$i18n.locale'(newLocale) {
-              // 在这里编写语言切换后需要执行的逻辑
-             // this.activeIndex = temp;
-             console.log('4444',)
-             this.showInfo = this.slides[this.activeIndex]
-             let info = '';
-             
-             switch (this.activeIndex) {
-                 case 0:
-                     info = this.$t('Susan')
-                     break;
-                 case 1:
-                     info = this.$t('xiajia')
-                     break;
-                 case 2:
-                     info = this.$t('Miranda')
-                     break;
-                 case 3:
-                     info = this.$t('Raymond')
-                     break;
-                 default:
-                     break;
-             }
-             console.log(info,'info')
-             this.showInfo.info = info
-              // 如果有其他组件或页面也依赖于语言切换，则可能还需要更新相关内容
-              this.$forceUpdate();
+                // 在这里编写语言切换后需要执行的逻辑
+                // this.activeIndex = temp;
+                console.log('4444', )
+                this.showInfo = this.slides[this.activeIndex]
+                let info = '';
+
+                switch (this.activeIndex) {
+                    case 0:
+                        info = this.$t('Susan')
+                        break;
+                    case 1:
+                        info = this.$t('xiajia')
+                        break;
+                    case 2:
+                        info = this.$t('Miranda')
+                        break;
+                    case 3:
+                        info = this.$t('Raymond')
+                        break;
+                    default:
+                        break;
+                }
+                console.log(info, 'info')
+                this.showInfo.info = info
+                // 如果有其他组件或页面也依赖于语言切换，则可能还需要更新相关内容
+                this.$forceUpdate();
             }
-          },
+        },
         methods: {
             onSlideChange(temp) {
                 this.activeIndex = temp;
@@ -154,7 +165,7 @@
                     default:
                         break;
                 }
-                console.log(info,'info',temp)
+                console.log(info, 'info', temp)
                 this.showInfo.info = info
                 // this.$emit('getData', this.list[temp].title)
             },
@@ -175,7 +186,7 @@
     }
 
     .member {
-        height: 100%;
+        min-height: 100%;
         width: 100%;
         background: #0A1B2F;
     }
@@ -191,7 +202,10 @@
 
 
         padding: 40px 0;
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-start;
         /* width: 100%;
         height: 100%; */
     }
@@ -213,22 +227,34 @@
     }
 
     .memberInfo .memberInfo_name .memberInfo_name_icon {
-        width: 22px;
-        height: 22px;
+        width: 50px;
+        height: 50px;
         display: block;
         float: left;
+        border-radius: 4px;
     }
-
-    .memberInfo .memberInfo_name .memberInfo_name_text {
+    .memberInfo_name_box{
         float: left;
+        /* margin-top: 5px; */
+    }
+    .memberInfo .memberInfo_name .memberInfo_name_text {
+        
         font-size: 24px;
 
         font-weight: 500;
 
         line-height: 20px;
-        margin-left: 5px;
+        margin-left: 15px;
+        color:#d86129;
     }
-
+    .memberInfo .memberInfo_name .memberInfo_duties {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+    
     .memberInfo .memberInfo_text {
         margin-top: 17px;
         font-size: 16px;
@@ -239,7 +265,7 @@
         float: left;
         width: 900px;
         height: 400px;
-        margin-left: 95px;
+        margin-left: 35px;
         color: #fff;
     }
 

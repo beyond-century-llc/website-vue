@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        <mobileHeader title='关于卓越'></mobileHeader>
+        <mobileHeader :title="$t('关于卓越')"></mobileHeader>
         <div class="page_index">
             <div class="name">
                 BEYOND 
@@ -10,11 +10,18 @@
                 {{$t('IPO财务顾问服务')}}
             </div>
             <div class="server">
-               <img src="./../../../assets/mobile/icon_consultant.png" alt="" />
-               <p>
+               
+               <div @click="routerGo('mobileMember')">
+                   <img src="./../../../assets/mobile/icon_consultant.png" alt="" />
                    {{$t('努力成为我们客户最值得信赖的顾问')}}
+                   
+
+               </div>
+               <div  @click="routerGo('mobileServerType')" style="margin-top:20px">
+                   <img src="./../../../assets/mobile/icon_consultant.png" alt="" />
+                  
                    {{$t('提供超出预期的服务')}}
-               </p>
+               </div>
             </div>
             <div class="more" @click="goAbout">
                 {{$t('了解更多')}}
@@ -43,6 +50,12 @@
                 
                 this.$router.push({
                     name: 'mobileAbout',
+                })
+            },
+            routerGo(path){
+                this.$router.push({
+                    name: path,
+                   
                 })
             }
         },
@@ -106,19 +119,23 @@
         line-height: 60px; */
     }
     .page_index .server img{
+        margin-right: 20px;
         width: 76px;
         height: 76px;
-        float: left;
+        
+        /* float: left; */
     }
-    .page_index .server p{
+    .page_index .server div{
         width: 512px;
-        margin-left: 20px;
+        margin-left: 50px;
         float: left;
         font-size: 32px;
         font-family: SourceHanSansSC, SourceHanSansSC;
         font-weight: 400;
         color: #FFFFFF;
-        line-height: 60px;
+        line-height: 45px;
+        text-align:left;
+        display:flex;
     }
     .page_index .more{
         width: 280px;
@@ -127,9 +144,15 @@
         border-radius: 44px;
         
         text-align: center;
-        margin: 0 auto;
-        margin-top: 160px;
         
+        
+      /* margin: 0 auto;
+        margin-top: 90px; */
+        position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 60px;
+            margin: auto;
       
         font-size: 36px;
         font-family: PingFangSC, PingFang SC;
