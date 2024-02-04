@@ -28,7 +28,8 @@
         </div>
         <div style="height: 100%;width: 100%;">
             <div class="content">
-                <div class="customList">
+                <wordCloud></wordCloud>
+                <!-- <div class="customList">
                     <div class="list" style="margin-left: 42px;background: linear-gradient(135deg, #9abbda, #5170a0);">{{$t('超越卓越')}}</div>
                     <div class="list" style="margin-left: 42px;background: linear-gradient(135deg, #9abbda, #5170a0);">{{$t('责任')}}</div>
                     <div class="list" style="margin-left: 42px;background: linear-gradient(135deg, #9abbda, #5170a0);">{{$t('准确')}}</div>
@@ -38,17 +39,16 @@
                     <div class="list" style="margin-left: 42px;background: linear-gradient(135deg, #9abbda, #5170a0);">{{$t('勤勉')}}</div>
                     <div class="list" style="margin-left: 42px;background: linear-gradient(135deg, #9abbda, #5170a0);">{{$t('优质')}}</div>
                     <div class="list" style="margin-left: 42px;background: linear-gradient(135deg, #9abbda, #5170a0);">{{$t('诚实')}}</div>
-                    <!-- <div class="list" style="margin-left: 85px;">Professionalism</div> -->
                     <div class="list" style="margin-left: 42px;background: linear-gradient(135deg, #9abbda, #5170a0);">{{$t('专业')}}</div>
                     <div class="list" style="margin-left: 42px;background: linear-gradient(135deg, #9abbda, #5170a0);">{{$t('守信')}}</div>
                     <div class="list" style="margin-left: 42px;background: linear-gradient(135deg, #9abbda, #5170a0);">{{$t('创新')}}</div>
                     <div class="list" style="margin-left: 42px;background: linear-gradient(135deg, #9abbda, #5170a0);">{{$t('洞察')}}</div>
-                    <!-- <div class="list" style="margin-left: 42px;">{{$t('责任')}}</div> -->
-                    <!-- <div class="list" style="margin-left: 42px;">Core Values</div> -->
                     <div class="list" style="margin-left: 42px;background: linear-gradient(135deg, #9abbda, #5170a0);">{{$t('信赖')}}</div>
-                </div>
+                </div> -->
             </div>
 
+        </div>
+        <div>
 
         </div>
     </div>
@@ -59,14 +59,16 @@
         Carousel3d,
         Slide
     } from 'vue-carousel-3d';
-
+    
     import headerTop from './../../../componentsPc/headerTop.vue'
+    import wordCloud from './components/wordCloud.vue'
     export default {
         name: 'home',
         components: {
             headerTop,
             Carousel3d,
-            Slide
+            Slide,
+            wordCloud
         },
         data() {
             return {
@@ -128,6 +130,7 @@
         background-size: 100% 100%;
         display: flex;
         align-items: center;
+            justify-content: center;
         /* padding-top: 100px; */
     }
 
