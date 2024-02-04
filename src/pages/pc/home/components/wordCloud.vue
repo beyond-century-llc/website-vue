@@ -27,25 +27,27 @@
             contentEle: [],
             width: 600,
             height: 600,
-            direction: '-1',
+            direction: '1',
             speed: 900
         }),
         created() {
             this.data = [this.$t('超越卓越'), this.$t('责任'), this.$t('准确'),
                 this.$t('能力'),this.$t('可靠'), this.$t('热爱'),this.$t('勤勉'),this.$t('优质'),this.$t('诚实'),
+                this.$t('超越卓越'),
                 this.$t('专业'),
                 this.$t('守信'),
                 this.$t('创新'),
                 this.$t('洞察'),
-                this.$t('责任'),
+                this.$t('超越卓越'),
                 this.$t('信赖'),
                 this.$t('超越卓越'), this.$t('责任'), this.$t('准确'),
                     this.$t('能力'),this.$t('可靠'), this.$t('热爱'),this.$t('勤勉'),this.$t('优质'),this.$t('诚实'),
+                    this.$t('超越卓越'),
                     this.$t('专业'),
                     this.$t('守信'),
                     this.$t('创新'),
                     this.$t('洞察'),
-                    this.$t('责任'),
+                    this.$t('超越卓越'),
                     this.$t('信赖')
             ]
             // .repeat(20)
