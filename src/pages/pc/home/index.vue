@@ -212,10 +212,12 @@
     }
 
     .server {
-        width: 385px;
+        width: 605px;
         height: 75px;
         margin-top: 123px;
-    }
+        display: flex;
+            flex-direction: column;
+    }   
 
     .server div {
         cursor: pointer;
@@ -228,7 +230,7 @@
     }
 
     .server p {
-        width: 288px;
+        /* width: 508px; */
         height: 75px;
         font-size: 18px;
         font-family: SourceHanSansSC, SourceHanSansSC;

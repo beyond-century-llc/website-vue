@@ -87,7 +87,7 @@ var lange = {
     "官网": "官网",
    "美国总部地址":" 美国总部地址：21660 E Copley Drive, Suite 268 Diamond Bar, CA 91765",
    "中国办公室地址":"中国办公室地址：湖南省长沙市岳麓区万为科技产业园1栋303室",
-   "版权所有":" 版权所有 ©2024 Beyond Century Consulting, LLC. 保留一切权力",
+   "版权所有":" 版权所有 ©2024 Beyond Century Consulting, LLC. 保留一切权力。",
 
     "关于公司": "关于公司",
     "从细节开始": "从细节开始 服务好每一个企业",
