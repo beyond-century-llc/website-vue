@@ -31,7 +31,7 @@
 
                 </slider-item>
                 <slider-item>
-                    <div class="silde sildeList silde4">
+                    <div class="silde sildeList silde5">
                         <div class="silde_mengban" >
                             <!-- <p>{{$t('行业经验')}}</p> -->
                             <p :style="{width:$i18n.locale=='zh-CN'?'515px':''}">{{$t('上市公司金融监管咨询服务')}}</p>
