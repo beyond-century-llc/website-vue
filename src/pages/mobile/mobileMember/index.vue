@@ -40,7 +40,7 @@
                                 <p>夏佳 Jia Xia, CPA</p>
                             </div> -->
                             <div class="name">
-                                <img src="./../../../assets/headerImg/susan.png" alt="" style="float: left;" />
+                                <img src="./../../../assets/headerImg/xiajia.png" alt="" style="float: left;" />
                                 <div style="float: left;">
                                     <p style="display: block;">夏佳 Jia Xia, CPA</p>
                                     <span style="display: block;margin-left: 15px;">Director</span>
@@ -67,7 +67,7 @@
                                 <p>Miranda Sun, CPA</p>
                             </div> -->
                             <div class="name">
-                                <img src="./../../../assets/headerImg/susan.png" alt="" style="float: left;" />
+                                <img src="./../../../assets/headerImg/Miranda-Suen.png" alt="" style="float: left;" />
                                 <div style="float: left;">
                                     <p style="display: block;">Miranda Sun, CPA</p>
                                     <span style="display: block;margin-left: 15px;">Partner</span>
@@ -91,7 +91,7 @@
                                 <p>Raymond Choy,CPA, CGMA</p>
                             </div> -->
                             <div class="name">
-                                <img src="./../../../assets/headerImg/susan.png" alt="" style="float: left;" />
+                                <img src="./../../../assets/headerImg/Raymond-Choy.png" alt="" style="float: left;" />
                                 <div style="float: left;">
                                     <p style="display: block;">Raymond Choy,CPA, CGMA</p>
                                     <span style="display: block;margin-left: 15px;">Partner</span>
