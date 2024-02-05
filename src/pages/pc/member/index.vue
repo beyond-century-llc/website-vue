@@ -268,7 +268,7 @@
 
     .memberInfo_list {
         float: left;
-        width: 900px;
+        width: 878px;
         height: 400px;
         margin-left: 35px;
         color: #fff;
