@@ -177,7 +177,7 @@
 
     .banner {
         width: 100%;
-        height: 620px;
+        height: 680px;
         background: url('./../../../assets/img/bg_about_map.png') no-repeat 100% 100%;
         text-align: center;
     }
