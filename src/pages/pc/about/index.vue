@@ -25,6 +25,7 @@
                 </carousel-3d>
             </div>
         </div>
+        <fooferButtom></fooferButtom>
     </div>
 </template>
 
@@ -35,12 +36,14 @@
     } from 'vue-carousel-3d';
 
     import headerTop from './../../../componentsPc/headerTop.vue'
+    import fooferButtom from './../../../componentsPc/fooferButtom.vue'
     export default {
         name: 'about',
         components: {
             headerTop,
             Carousel3d,
-            Slide
+            Slide,
+            fooferButtom
         },
         data() {
             return {
@@ -174,7 +177,7 @@
 
     .banner {
         width: 100%;
-        height: 540px;
+        height: 620px;
         background: url('./../../../assets/img/bg_about_map.png') no-repeat 100% 100%;
         text-align: center;
     }

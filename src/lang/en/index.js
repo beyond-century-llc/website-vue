@@ -15,7 +15,7 @@ var lange = {
 
 
 
-    "卓越世纪是一家提供全面服务的顾问咨询公司": "BEYOND CENTURY is a comprehensive consulting firm with experienced expertise to serve companies in Asia, especially in China.",
+    "卓越世纪是一家提供全面服务的顾问咨询公司": "BEYOND CENTURY is a full-service consulting firm with extensive experience in a variety of industries. ",
     "这是卓越世纪的荣幸和机会": "This is an honor and opportunity for BEYOND CENTURY to provide comprehensive services for your company, including financial advisory, consulting, merger and acquisition consulting, and US IPO planning. Our partners and team sincerely care about your business and the challenges you face, and we have the expertise to successfully solve your problems.",
     "我们为国内外企业特别是亚洲": "We provide comprehensive, professional, and high-quality financial accounting consulting services for domestic and foreign enterprises, especially Asian/Chinese enterprises.",
     "我们的使命是成为最受客户信赖的专业财务顾问": "Our mission is to become the most trusted professional financial advisor for our clients and provide a wide range of solutions to meet your business needs. We are committed to achieving the highest quality level in everything we do.",
@@ -90,7 +90,7 @@ var lange = {
     "官网": "Official Website",
     "美国总部地址":"U.S. office：21660 E Copley Drive, Suite 268 Diamond Bar, CA 91765",
     "中国办公室地址":"China office:  湖南省长沙市岳麓区万为科技产业园1栋303室",
-
+    "版权所有":"Copyright ©2024 Beyond Century Consulting, LLC. All Rights Reserved.",
     "从细节开始": "Starting from the details, serve every enterprise well",
     
     

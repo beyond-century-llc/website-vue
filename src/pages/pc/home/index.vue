@@ -48,9 +48,7 @@
             </div>
 
         </div>
-        <div>
-
-        </div>
+        <fooferButtom></fooferButtom>
     </div>
 </template>
 
@@ -61,11 +59,13 @@
     } from 'vue-carousel-3d';
     
     import headerTop from './../../../componentsPc/headerTop.vue'
+    import fooferButtom from './../../../componentsPc/fooferButtom.vue'
     import wordCloud from './components/wordCloud.vue'
     export default {
         name: 'home',
         components: {
             headerTop,
+            fooferButtom,
             Carousel3d,
             Slide,
             wordCloud

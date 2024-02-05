@@ -47,11 +47,13 @@
 
             </div>
         </div>
+        <fooferButtom></fooferButtom>
     </div>
 </template>
 
 <script>
     import headerTop from './../../../componentsPc/headerTop.vue'
+    import fooferButtom from './../../../componentsPc/fooferButtom.vue'
     import {
         Carousel3d,
         Slide
@@ -62,7 +64,8 @@
         components: {
             headerTop,
             Carousel3d,
-            Slide
+            Slide,
+            fooferButtom
         },
         data() {
             return {
@@ -213,7 +216,7 @@
 
     .memberInfo {
         width: 480px;
-        /* height: 170px; */
+        height: 570px;
         background: #030F1E;
         float: left;
         color: #fff;

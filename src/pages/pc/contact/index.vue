@@ -33,24 +33,15 @@
                     </span>
                 </div>
             </div>
-            <div class="footer">
-                <div class="centext">
-                    <div class="logo">
-                        <img src="./../../../assets/img/logo.jpg" alt="" />
-                        <p>
-                            {{$t('努力成为我们客户最值得信赖的顾问')}}
-                            <br />
-                            {{$t('提供超出预期的服务')}}
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <fooferButtom></fooferButtom>
         </div>
     </div>
 </template>
 
 <script>
     import headerTop from './../../../componentsPc/headerTop.vue'
+    import fooferButtom from './../../../componentsPc/fooferButtom.vue'
+    
     import {
         Carousel3d,
         Slide
@@ -61,6 +52,7 @@
         name: 'home',
         components: {
             headerTop,
+            fooferButtom,
             Carousel3d,
             Slide
         },
@@ -212,28 +204,5 @@
         margin-top: 11px;
     }
 
-    .footer {
-        width: 100%;
-        height: 90px;
-    }
-
-    .footer .centext {
-        width: 80%;
-        height: 100%;
-        margin: 0 auto;
-    }
-
-    .footer .centext .logo {
-        margin-top: 28px;
-    }
-
-    .footer .centext .logo img {
-        width: 66px;
-        height: 24px;
-    }
-
-    .footer .centext .logo p {
-        margin-top: 9px;
-        font-size: 12px;
-    }
+    
 </style>

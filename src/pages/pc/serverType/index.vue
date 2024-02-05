@@ -246,6 +246,7 @@
                 </p>
             </div>
         </div>
+        <fooferButtom></fooferButtom>
     </div>
 </template>
 
@@ -258,12 +259,14 @@
 
 
     import headerTop from './../../../componentsPc/headerTop.vue'
+    import fooferButtom from './../../../componentsPc/fooferButtom.vue'
     export default {
         name: 'ablout',
         components: {
             headerTop,
             Slider,
             SliderItem,
+            fooferButtom
         },
         data() {
             return {
