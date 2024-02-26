@@ -7,7 +7,7 @@ var lange = {
     "服务宗旨":"Core Values",
     "服务类型":"Service Types",
     
-    "IPO财务顾问服务": "SEC financial reporting consulting services",
+    "IPO财务顾问服务": "SEC financial reporting",
     "努力成为我们客户最值得信赖的顾问": "Strive to become the most trusted advisor for clients",
     "提供超出预期的服务": "Provide services beyond expectations",
     "了解更多": "Learn more",

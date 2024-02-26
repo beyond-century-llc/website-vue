@@ -5,7 +5,11 @@
             <div class='silderImg' @click="changeSilder">
                 <img src="./../../../assets/mobile/icon_nest.png" alt="" />
             </div>
-            <slider ref="slider" v-model="sliderValue" :autoplay='false' animation="fade" :indicators='false'
+            <slider ref="slider" v-model="sliderValue" 
+                :touch="false"
+                 :autoplay='false'
+                  animation="fade"
+                   :indicators='false'
                 :controlBtn='false'>
 
                 <slider-item>
@@ -132,6 +136,7 @@
         },
         methods: {
             changeSilder() {
+                
                  // this.sliderValue = this.sliderValue + 1
                this.sliderValue = this.sliderValue + 1
                if(this.sliderValue == 4){
@@ -167,7 +172,7 @@
         right: 40px;
         width: 100px;
         height: 100px;
-        z-index: 999;
+        z-index: 998;
     }
 
     .item {

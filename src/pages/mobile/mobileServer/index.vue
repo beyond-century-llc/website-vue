@@ -231,9 +231,9 @@
                 var option = {
                     series: [{
                         type: 'wordCloud',
-                        sizeRange: [0, 150],
+                        sizeRange: [0, 100],
                         rotationRange: [0, 0],
-                        gridSize: 8,
+                        gridSize: 7,
                         shape: 'pentagon',
                         maskImage: maskImage,
                         drawOutOfBound: false,
@@ -267,6 +267,7 @@
 
                 // maskImage.style.width = '800px';
                 // maskImage.style.height = '600px';
+                console.log(maskImage.style,'maskImage')
                 maskImage.src = require('@/assets/img/jingyu3.jpg');
 
                 window.onresize = function() {
@@ -289,7 +290,7 @@
         height: 800px;
         margin: 0 auto;
         position: absolute;
-        top: 0px;
+        top: 15%;
     }
 
     .page_menmber {}

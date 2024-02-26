@@ -20,11 +20,17 @@
                     <div class="server">
                         <span class="content">
                             {{$t('由于商业环境和交易的复杂性增加以及会计准则的不断更新')}}
-
+                            </br>
+                        </span>
+                        </br>
+                        <span class="content">
+                            {{$t('我们的会计咨询服务包括但不限于以下相关项目')}}
+                            </br>
                         </span>
                         <span class="more" v-if="!experience1" @click="experience1 = true">
                             ...{{$t('点击阅读全文')}}
                         </span>
+                        </br>
                         <span class="content" v-if="experience1">
                             <div class="customListText">
                                 <span>➤</span>
@@ -90,7 +96,11 @@
                     <div class="server">
                         <span class="content">
                             {{$t('我们的专业团队致力于帮助私有企业进行财务结构重组')}}
+                            </br>
+                            </br>
                             {{$t('我们的财务咨询服务包括但不限于以下相关项目')}}
+                            </br>
+                            <!-- {{$t('我们的财务咨询服务包括但不限于以下相关项目')}} -->
                         </span>
                         <span class="more" v-if="!experience2" @click="experience2 = true">
                             ...{{$t('点击阅读全文')}}
@@ -159,7 +169,9 @@
                     </div>
                     <div class="server">
                         <span class="content">
-                            {{$t('我们的并购实践团队将在每一次交易中充当保驾护航的角色')}}</br>
+                            {{$t('我们的并购实践团队将在每一次交易中充当保驾护航的角色')}}
+                            </br>
+                            </br>
                             <div class="customListText">
                                 <span>➤</span>
                                 <span>
