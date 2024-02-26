@@ -4,7 +4,7 @@
         <div class="page_menmber">
             <div class="yatai">
                 <div class="img">
-                    <img src="./../../../assets/mobileServer/server1.png" alt="" />
+                    <img src="./../../../assets/mobileServer/server6.png" alt="" />
                     <div id='main'></div>
                 </div>
 
