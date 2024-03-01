@@ -30,10 +30,10 @@
                         <p>{{$t('关于卓越')}}</p>
                         <img  v-if="routerActive==1"  src="./../assets/mobile/icon_yes_white.png" alt="">
                     </div>
-                    <div class="list" :class="[routerActive==2?'active':'']" @click="changePath(2,'mobileServer')" >
+                    <!-- <div class="list" :class="[routerActive==2?'active':'']" @click="changePath(2,'mobileServer')" >
                         <p>{{$t('服务宗旨')}}</p>
                         <img  v-if="routerActive==2"  src="./../assets/mobile/icon_yes_white.png" alt="">
-                    </div>
+                    </div> -->
                     <div class="list" :class="[routerActive==3?'active':'']" @click="serverType()" style="display: inline-block;">
                         <p style="height: 70px;line-height: 70px;" >{{$t('服务类型')}}</p>
                         <!-- <img  v-if="routerActive==3"  src="./../assets/mobile/icon_yes_white.png" alt=""> -->

@@ -2,9 +2,13 @@
     <div class="page">
         <mobileHeader :title='$t("主要成员")'></mobileHeader>
         <div class="page_menmber">
-            <div class='silderImg' @click="changeSilder">
+            <div class='silderImg' style="left: 20px;" @click="changeSilderLeft">
+                <img src="./../../../assets/mobile/icon_previous.png" alt="" />
+            </div>
+            <div class='silderImg' @click="changeSilderRight">
                 <img src="./../../../assets/mobile/icon_nest.png" alt="" />
             </div>
+            
             <slider ref="slider" v-model="sliderValue" 
                 :touch="false"
                  :autoplay='false'
@@ -32,6 +36,30 @@
 
                     </div>
 
+                </slider-item>
+                <slider-item>
+                    <div class="item">
+                        <div class="memberImg">
+                            <img src="./../../../assets/headerImg/Raymond-Choy.png" alt="" />
+                        </div>
+                        <div class="memberName">
+                            <!-- <div class="name">
+                                <img src="./../../../assets/headerImg/Raymond-Choy.png" alt="" />
+                                <p>Raymond Choy,CPA, CGMA</p>
+                            </div> -->
+                            <div class="name">
+                                <img src="./../../../assets/headerImg/Raymond-Choy.png" alt="" style="float: left;" />
+                                <div style="float: left;">
+                                    <p style="display: block;">Raymond Choy,CPA, CGMA</p>
+                                    <span style="display: block;margin-left: 15px;">Partner</span>
+                                </div>
+                            </div>
+                            <div class="introduce">
+                                {{$t('Raymond')}}
+                                
+                            </div>
+                        </div>
+                    </div>
                 </slider-item>
                 <slider-item>
                     <div class="item">
@@ -84,30 +112,7 @@
                         </div>
                     </div>
                 </slider-item>
-                <slider-item>
-                    <div class="item">
-                        <div class="memberImg">
-                            <img src="./../../../assets/headerImg/Raymond-Choy.png" alt="" />
-                        </div>
-                        <div class="memberName">
-                            <!-- <div class="name">
-                                <img src="./../../../assets/headerImg/Raymond-Choy.png" alt="" />
-                                <p>Raymond Choy,CPA, CGMA</p>
-                            </div> -->
-                            <div class="name">
-                                <img src="./../../../assets/headerImg/Raymond-Choy.png" alt="" style="float: left;" />
-                                <div style="float: left;">
-                                    <p style="display: block;">Raymond Choy,CPA, CGMA</p>
-                                    <span style="display: block;margin-left: 15px;">Partner</span>
-                                </div>
-                            </div>
-                            <div class="introduce">
-                                {{$t('Raymond')}}
-                                
-                            </div>
-                        </div>
-                    </div>
-                </slider-item>
+                
 
             </slider>
 
@@ -135,14 +140,23 @@
             }
         },
         methods: {
-            changeSilder() {
+            changeSilderRight() {
                 
                  // this.sliderValue = this.sliderValue + 1
                this.sliderValue = this.sliderValue + 1
                if(this.sliderValue == 4){
                    this.sliderValue = 0
                }
+            },
+            changeSilderLeft(){
+
+                
+                if(this.sliderValue == 0){
+                    this.sliderValue = 4
+                }
+                this.sliderValue = this.sliderValue - 1
             }
+            
         },
     }
 </script>
