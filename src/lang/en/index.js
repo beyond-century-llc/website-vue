@@ -45,14 +45,14 @@ var lange = {
     "协助招股说明书的起草和尽职调查": "Assist in prospectus drafting and diligence",
 
 
-    "我们的并购实践团队将在每一次交易中充当保驾护航的角色": "Our M&A practice team will act as an escort during each transaction, fully commit themselves to escort each client with differentiated, value-added advice and a complete and proven method to facilitate smooth and successful acquisitions.",
+    "我们的并购实践团队将在每一次交易中充当保驾护航的角色": "Our mergers and acquisitions practice team will act as an escort during each transaction, fully commit themselves to escort each client with differentiated, value-added advice and a complete and proven method to facilitate smooth and successful acquisitions.",
     "对目标公司进行尽职调查": "Conduct due diligence, including financial, tax commercial, operational business on the target company",
     "作为买方代理策划": "Work with the buyer's agent in planning the acquisition of suitable enterprises while obtaining the most favorable outcomes and optimizing growth",
     "作为卖方代理实施反兼并措施": "Act as the seller to help companies achieve the lowest possible cost of a successful transaction",
     "保护客户在目标公司及其股东中的利益": "Protect our client’s interests in the target company and its shareholders",
     "组建采购小组并制定工作计划": "Organize the acquisition group and set up work schedules",
     "参与谈判并确定并购条件": "Participate in the negotiations and determine the conditions for mergers and acquisitions",
-    "组织协调会计师事务所": "Organize and coordinate accounting firms, law firms, appraisal firms and other intermediaries work related acquisitions",
+    "组织协调会计师事务所": "Organize and coordinate accounting firms, law firms, appraisal firms and other intermediaries",
     "协助当事人获取相关文件": "Assist the buyer in acquiring the relevant documents",
 
 
@@ -61,8 +61,8 @@ var lange = {
     "我们的专业团队在美国拥有丰富的经验": "Our professional team has extensive experience in the United States. They fully grasp and understand the Chinese and American financial reporting standards.",
     "我们对客户提供的金融管理条例遵从服务包括以下项目": "We also provide our clients with financial regulations compliance services, which include:",
     "协助公司准备所有财务相关数据": "Assist the compaies to prepare all financial related data, included but not limited to, management discussion and analysis, capitalization schedule and dilution schedule, to be incorporated into the registration statement on Form S-1/F-1 filed in connection with the initial public offering (IPO)",
-    "财政报表年度性和季度性审查": " The annual financial statements and quarterly review (20-F, 6K, 10-K and 10-Q)",
-    "塞班斯": " Sarbanes-Oxley compliance services",
+    "财政报表年度性和季度性审查": " Prepare the annual financial statements and quarterly review (20-F, 6K, 10-K and 10-Q)",
+    "塞班斯": "Sarbanes-Oxley compliance services",
     "帮助公司遵守并遵守美国证券交易委员会的法规": "Help companies comply with and follow the regulations of the U.S. Securities and Exchange Commission",
     "评估建立和实施内部控制体系": "Assess, establish, and implement an internal control system",
 
