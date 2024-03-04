@@ -126,16 +126,18 @@
         /* float: left; */
     }
     .page_index .server div{
-        width: 512px;
+        /* width: 512px; */
         margin-left: 50px;
         float: left;
         font-size: 32px;
         font-family: SourceHanSansSC, SourceHanSansSC;
         font-weight: 400;
         color: #FFFFFF;
+        
         line-height: 45px;
         text-align:left;
         display:flex;
+        align-items:center;
     }
     .page_index .more{
         width: 280px;

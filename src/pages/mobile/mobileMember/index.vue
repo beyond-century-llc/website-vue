@@ -61,6 +61,31 @@
                         </div>
                     </div>
                 </slider-item>
+                
+                <slider-item>
+                    <div class="item">
+                        <div class="memberImg">
+                            <img src="./../../../assets/headerImg/Miranda-Suen.png" alt="" />
+                        </div>
+                        <div class="memberName">
+                            <!-- <div class="name">
+                                <img src="./../../../assets/headerImg/Miranda-Suen.png" alt="" />
+                                <p>Miranda Sun, CPA</p>
+                            </div> -->
+                            <div class="name">
+                                <img src="./../../../assets/headerImg/Miranda-Suen.png" alt="" style="float: left;" />
+                                <div style="float: left;">
+                                    <p style="display: block;">Miranda Sun, CPA</p>
+                                    <span style="display: block;margin-left: 15px;">Partner</span>
+                                </div>
+                            </div>
+                            <div class="introduce">
+                                {{$t('Miranda')}}
+                                
+                            </div>
+                        </div>
+                    </div>
+                </slider-item>
                 <slider-item>
                     <div class="item">
                         <div class="memberImg">
@@ -88,31 +113,6 @@
                         </div>
                     </div>
                 </slider-item>
-                <slider-item>
-                    <div class="item">
-                        <div class="memberImg">
-                            <img src="./../../../assets/headerImg/Miranda-Suen.png" alt="" />
-                        </div>
-                        <div class="memberName">
-                            <!-- <div class="name">
-                                <img src="./../../../assets/headerImg/Miranda-Suen.png" alt="" />
-                                <p>Miranda Sun, CPA</p>
-                            </div> -->
-                            <div class="name">
-                                <img src="./../../../assets/headerImg/Miranda-Suen.png" alt="" style="float: left;" />
-                                <div style="float: left;">
-                                    <p style="display: block;">Miranda Sun, CPA</p>
-                                    <span style="display: block;margin-left: 15px;">Partner</span>
-                                </div>
-                            </div>
-                            <div class="introduce">
-                                {{$t('Miranda')}}
-                                
-                            </div>
-                        </div>
-                    </div>
-                </slider-item>
-                
 
             </slider>
 
