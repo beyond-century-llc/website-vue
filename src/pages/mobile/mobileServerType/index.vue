@@ -578,7 +578,7 @@
         font-size: 24px;
         font-family: SourceHanSansSC, SourceHanSansSC;
         font-weight: 400;
-        color: #BABEC9;
+        color: #52555d;
         line-height: 40px;
         letter-spacing: 2px;
     }

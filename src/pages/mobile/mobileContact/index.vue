@@ -26,7 +26,7 @@
                         {{$t('美国总部地址')}}</br>
                         {{$t('中国办公室地址')}}</br>
                     {{$t('地址')}}：21660 E Copley Drive, Suite 268 Diamond Bar, CA 91765 </br>
-                    {{$t('电话')}}：(909) 839-6788</br>
+                    {{$t('电话')}}：+001 (909) 839-6788</br>
                     {{$t('官网')}}：www.beyondcenturyllc.com</br>
                 </p>
             </div>

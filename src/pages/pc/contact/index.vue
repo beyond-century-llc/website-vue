@@ -26,7 +26,7 @@
                         {{$t('中国办公室地址')}}
                     </span>
                     <span style="margin-top: 10px;">
-                        {{$t('电话')}}：(909) 839-6788
+                        {{$t('电话')}}：+001 (909) 839-6788
                     </span>
                     <span style="margin-top: 10px;margin-bottom: 20px;">
                         {{$t('官网')}}：www.beyondcenturyllc.com

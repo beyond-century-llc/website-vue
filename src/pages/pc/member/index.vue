@@ -84,13 +84,7 @@
                         info: this.$t('Susan'),
                         duties:"Partner"
                     },
-                    {
-                        id: 2,
-                        name: "夏佳 Jia Xia, CPA",
-                        headerImg: require('./../../../assets/headerImg/xiajia.png'),
-                        info: this.$t('xiajia'),
-                        duties:"Director"
-                    },
+                    
                     {
                         id: 3,
                         name: "Miranda Sun, CPA",
@@ -104,6 +98,13 @@
                         headerImg: require('./../../../assets/headerImg/Raymond-Choy.png'),
                         info: this.$t('Raymond'),
                         duties:"Partner"
+                    },
+                    {
+                        id: 2,
+                        name: "夏佳 Jia Xia, CPA",
+                        headerImg: require('./../../../assets/headerImg/xiajia.png'),
+                        info: this.$t('xiajia'),
+                        duties:"Director"
                     },
 
                 ]
