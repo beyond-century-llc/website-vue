@@ -110,8 +110,12 @@ var lange = {
     "洞察":"Insights",
     // "责任":"Responsibility",
     "信赖":"Trustworthy",
-   
- 
+    
+    
+    "提示":"tip",
+    "关闭":"close",
+    "请输入":"Please enter",
+    
     
 }
 export default lange

@@ -114,6 +114,8 @@ if (window.navigator.userAgent.match(
     console.log(isMobile,'isMobile')
     var router = new Router({
         linkActiveClass: 'active',
+        
+ mode: 'history',
         routes: isMobile ? mobileRouter : pcRouter
     })
     export default router

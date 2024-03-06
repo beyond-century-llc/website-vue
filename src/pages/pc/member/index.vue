@@ -35,7 +35,6 @@
                                 <img class="headerImg" :src="item.headerImg" alt="" />
                                 <div class="memberName">
                                     <p class="name">{{item.name}}</p>
-                                    <!-- <p class="duties">CPA</p> -->
                                 </div>
                             </div>
                         </slide>
@@ -93,19 +92,20 @@
                         duties:"Partner"
                     },
                     {
-                        id: 4,
-                        name: "Raymond Choy, CPA, CGMA",
-                        headerImg: require('./../../../assets/headerImg/Raymond-Choy.png'),
-                        info: this.$t('Raymond'),
-                        duties:"Partner"
-                    },
-                    {
                         id: 2,
                         name: "夏佳 Jia Xia, CPA",
                         headerImg: require('./../../../assets/headerImg/xiajia.png'),
                         info: this.$t('xiajia'),
                         duties:"Director"
                     },
+                    {
+                        id: 4,
+                        name: "Raymond Choy, CPA, CGMA",
+                        headerImg: require('./../../../assets/headerImg/Raymond-Choy.png'),
+                        info: this.$t('Raymond'),
+                        duties:"Partner"
+                    },
+                    
 
                 ]
 
@@ -120,7 +120,7 @@
             '$i18n.locale'(newLocale) {
                 // 在这里编写语言切换后需要执行的逻辑
                 // this.activeIndex = temp;
-                console.log('4444', )
+                
                 this.showInfo = this.slides[this.activeIndex]
                 let info = '';
 
@@ -128,10 +128,10 @@
                     case 0:
                         info = this.$t('Susan')
                         break;
-                    case 1:
+                    case 2:
                         info = this.$t('xiajia')
                         break;
-                    case 2:
+                    case 1:
                         info = this.$t('Miranda')
                         break;
                     case 3:
@@ -140,7 +140,7 @@
                     default:
                         break;
                 }
-                console.log(info, 'info')
+                // console.log(info, 'info')
                 this.showInfo.info = info
                 // 如果有其他组件或页面也依赖于语言切换，则可能还需要更新相关内容
                 this.$forceUpdate();
@@ -152,15 +152,15 @@
                 // console.log('4444', this.slides[temp])
                 this.showInfo = this.slides[temp]
                 let info = '';
-
+                console.log('4444', this.showInfo)
                 switch (temp) {
                     case 0:
                         info = this.$t('Susan')
                         break;
-                    case 1:
+                    case 2:
                         info = this.$t('xiajia')
                         break;
-                    case 2:
+                    case 1:
                         info = this.$t('Miranda')
                         break;
                     case 3:
@@ -169,7 +169,7 @@
                     default:
                         break;
                 }
-                console.log(info, 'info', temp)
+                // console.log(info, 'info', temp)
                 this.showInfo.info = info
                 // this.$emit('getData', this.list[temp].title)
             },

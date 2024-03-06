@@ -10,11 +10,11 @@
                     </span>
                     <div class="userInfo">
                         <div class="name">
-                            <input class="userName" type="text" :placeholder="$t('姓名')" />
-                            <input class="userPhone" type="text" :placeholder="$t('电话')" />
+                            <input class="userName" v-model="userInfo.name" type="text" :placeholder="$t('姓名')" />
+                            <input class="userPhone" v-model="userInfo.phone" type="text" :placeholder="$t('电话')" />
                         </div>
-                        <input type="email" class="email" :placeholder="$t('邮箱')" />
-                        <input type="text" class="remarks" :placeholder="$t('咨询内容')" />
+                        <input type="email" v-model="userInfo.email" class="email" :placeholder="$t('邮箱')" />
+                        <input type="text" v-model="userInfo.text" class="remarks" :placeholder="$t('咨询内容')" />
                         <div class="sumbit" @click='sumbit'>
                             {{$t("提交")}}
                         </div>
@@ -35,13 +35,25 @@
             </div>
             <fooferButtom></fooferButtom>
         </div>
+        <Dialog :show="showDialog" @close="showDialog = false">
+            <template #header>
+                <h2>{{$t('提示')}}</h2>
+            </template>
+
+            <p>{{dialog}}</p>
+
+            <template #footer>
+                <button style="padding: 10px;outline: none;border: none;" @click="showDialog = false">{{$t('关闭')}}</button>
+            </template>
+        </Dialog>
     </div>
 </template>
 
 <script>
     import headerTop from './../../../componentsPc/headerTop.vue'
     import fooferButtom from './../../../componentsPc/fooferButtom.vue'
-    
+    import Dialog from './../../../componentsPc/dialog.vue'
+
     import {
         Carousel3d,
         Slide
@@ -53,14 +65,22 @@
         components: {
             headerTop,
             fooferButtom,
+            Dialog,
             Carousel3d,
             Slide
         },
         data() {
             return {
                 activeIndex: 0,
-
-                slides: 7
+                showDialog: false,
+                dialog:"",
+                slides: 7,
+                userInfo: {
+                    name: "",
+                    phone: "",
+                    email: "",
+                    text: "",
+                }
             }
         },
         methods: {
@@ -74,14 +94,55 @@
                 this.$refs.carousel.goSlide(nextIndex);
             },
             sumbit() {
-                console.log('sumbit')
-                axios.post('http://localhost:8090/api/userInfo', {
-
-                }).then(() => {
-
-                }).catch(() => {
-
-                });
+               
+                // console.log('sumbit')
+                var _this = this;
+                // if (this.userInfo.name == '') {
+                //     this.showDialog = true
+                //     this.dialog = this.$t('请输入')+this.$t('姓名')
+                //     return
+                // }
+                // if (this.userInfo.phone == '') {
+                //     this.showDialog = true
+                //     this.dialog = this.$t('请输入')+this.$t('电话')
+                //     return
+                // }
+                // if (this.userInfo.email == '') {
+                //     this.showDialog = true
+                //     this.dialog = this.$t('请输入')+this.$t('邮箱')
+                //     return
+                // }
+                // if (this.userInfo.text == '') {
+                //     this.showDialog = true
+                //     this.dialog = this.$t('请输入')+this.$t('咨询内容')
+                //     return
+                // }
+                // _this.showDialog = true
+                // _this.dialog = '已经发送，'
+                axios.post(
+                    'https://accounts.google.com/o/oauth2/token?client_id=363262242717-pee092aho9jn0lnht1bfqqv7s8qaa6ov.apps.googleusercontent.com&client_secret=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&refresh_token=1//04LbNsxRBxva_CgYIARAAGAQSNwF-L9Irs9pAChmypWo7jbK0adC3ZvFgcqvi_7QE-HQ0J3uXwIqk5mTPpm4chZY0ghfJJjrGQCc&grant_type=refresh_token'
+                
+                ).then((res) => {
+                    console.log(res.data.access_token, 'cccc')
+                    let access_token = res.data.access_token
+                    axios.post('http://localhost:8090/api/userInfo', {
+                        userInfo: this.userInfo,
+                        access_token:access_token,
+                    }).then((res) => {
+                        console.log('res', res.data)
+                        // alert(res.data.msg)
+                        _this.showDialog = true
+                        _this.dialog = res.data.msg
+                        // if(res.data.status == 0){
+                    
+                        // }
+                    }).catch((error) => {
+                        console.log(error)
+                    });
+                }).catch((error) => {
+                    console.log(error, 'dddd')
+                })
+                
 
             }
         },
@@ -203,6 +264,4 @@
         display: block;
         margin-top: 11px;
     }
-
-    
 </style>
