@@ -43,7 +43,7 @@ router.get("/user", (req, res) => {
 //挂载具体路由 POST
 router.post("/userInfo", (req, res) => {
     const body = req.body //请求体
-    console.log(body.access_token, 'body')
+    console.log(body, 'body')
     
     // 创建发送邮件的传输器对象
     const transporter = nodemailer.createTransport({
@@ -51,7 +51,6 @@ router.post("/userInfo", (req, res) => {
         port: 465,
         secure: true,
         // proxy: 'http://127.0.0.1:1087/',
-    
         auth: {
             type: "OAuth2",
             user: "beyondcc.001@gmail.com",
@@ -66,9 +65,10 @@ router.post("/userInfo", (req, res) => {
     
     // 设置邮件内容
     // beyondcc.002@gmail.com
+    // beyondcc.002@gmail.com
     let mailOptions = {
         from: 'beyondcc.001@gmail.com', // 发件人地址
-        to: 'beyondcc.002@gmail.com', // 收件人地址
+        to: '827324885@qq.com', // 收件人地址
         subject: '来自客户' + body.userInfo.name + '的咨询', // 邮件主题
         text: `
             name:${body.userInfo.name};

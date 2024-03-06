@@ -97,28 +97,28 @@
                
                 // console.log('sumbit')
                 var _this = this;
-                // if (this.userInfo.name == '') {
-                //     this.showDialog = true
-                //     this.dialog = this.$t('请输入')+this.$t('姓名')
-                //     return
-                // }
-                // if (this.userInfo.phone == '') {
-                //     this.showDialog = true
-                //     this.dialog = this.$t('请输入')+this.$t('电话')
-                //     return
-                // }
-                // if (this.userInfo.email == '') {
-                //     this.showDialog = true
-                //     this.dialog = this.$t('请输入')+this.$t('邮箱')
-                //     return
-                // }
-                // if (this.userInfo.text == '') {
-                //     this.showDialog = true
-                //     this.dialog = this.$t('请输入')+this.$t('咨询内容')
-                //     return
-                // }
-                // _this.showDialog = true
-                // _this.dialog = '已经发送，'
+                if (this.userInfo.name == '') {
+                    this.showDialog = true
+                    this.dialog = this.$t('请输入')+this.$t('姓名')
+                    return
+                }
+                if (this.userInfo.phone == '') {
+                    this.showDialog = true
+                    this.dialog = this.$t('请输入')+this.$t('电话')
+                    return
+                }
+                if (this.userInfo.email == '') {
+                    this.showDialog = true
+                    this.dialog = this.$t('请输入')+this.$t('邮箱')
+                    return
+                }
+                if (this.userInfo.text == '') {
+                    this.showDialog = true
+                    this.dialog = this.$t('请输入')+this.$t('咨询内容')
+                    return
+                }
+                _this.showDialog = true
+                _this.dialog = _this.$t('发送成功，我们已经收到您的信息')
                 axios.post(
                     'https://accounts.google.com/o/oauth2/token?client_id=363262242717-pee092aho9jn0lnht1bfqqv7s8qaa6ov.apps.googleusercontent.com&client_secret=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&refresh_token=1//04LbNsxRBxva_CgYIARAAGAQSNwF-L9Irs9pAChmypWo7jbK0adC3ZvFgcqvi_7QE-HQ0J3uXwIqk5mTPpm4chZY0ghfJJjrGQCc&grant_type=refresh_token'
                 
@@ -134,7 +134,7 @@
                         _this.showDialog = true
                         _this.dialog = res.data.msg
                         // if(res.data.status == 0){
-                    
+                    // https://www.beyondcenturyllc.com/contact
                         // }
                     }).catch((error) => {
                         console.log(error)

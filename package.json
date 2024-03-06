@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node app & vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "node app & vue-cli-service build"
   },
   "dependencies": {

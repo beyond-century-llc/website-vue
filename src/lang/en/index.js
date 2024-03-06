@@ -115,7 +115,7 @@ var lange = {
     "提示":"tip",
     "关闭":"close",
     "请输入":"Please enter",
-    
+    "发送成功，我们已经收到您的信息":"Sending successful, we have received your message",
     
 }
 export default lange
