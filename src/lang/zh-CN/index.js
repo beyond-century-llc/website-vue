@@ -4,7 +4,7 @@ var lange = {
     "服务宗旨":"服务宗旨",
     "服务类型":"服务类型",
     "关于卓越": "关于卓越",
-    "IPO财务顾问服务": "美股财务咨询服务",
+    "IPO财务顾问服务": "IPO 财务咨询服务",
 
     "努力成为我们客户最值得信赖的顾问": "努力成为客户最值得信赖的顾问",
     "提供超出预期的服务": "提供超预期的服务",
@@ -94,8 +94,6 @@ var lange = {
     "主要成员": "主要成员",
     
     "超越卓越":"超越卓越",
-    // "超越":"超越",
-    // "卓越":"卓越",
     "责任":"责任",
     "准确":"准确",
     "能力":"能力",
@@ -108,23 +106,8 @@ var lange = {
     "守信":"守信",
     "创新":"创新",
     "洞察":"洞察",
-    // "责任":"责任",
     "信赖":"信赖",
-    // Above and Beyond
-    // Accountability
-    // Accurate
-    // Capability
-    // Dependability
-    // Devotion
-    // Diligence
-    // Excellence
-    // Honesty
-    // Professionalism
-    // Integrity
-    // Innovative
-    // Reliability
-    // Responsibility
-    // Trustworthy
+    
     
     "提示":"提示",
     "关闭":"关闭",

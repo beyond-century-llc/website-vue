@@ -60,7 +60,7 @@ var lange = {
     "我们帮助公司完成必要的报告程序": " We help companies complete the necessary reporting procedures so that they can carry out normal daily activities in the United States stock markets",
     "我们的专业团队在美国拥有丰富的经验": "Our professional team has extensive experience in the United States. They fully grasp and understand the Chinese and American financial reporting standards.",
     "我们对客户提供的金融管理条例遵从服务包括以下项目": "We also provide our clients with financial regulations compliance services, which include:",
-    "协助公司准备所有财务相关数据": "Assist the compaies to prepare all financial related data, included but not limited to, management discussion and analysis, capitalization schedule and dilution schedule, to be incorporated into the registration statement on Form S-1/F-1 filed in connection with the initial public offering (IPO)",
+    "协助公司准备所有财务相关数据": "Assist the companies to prepare all financial related data, included but not limited to, management discussion and analysis, capitalization schedule and dilution schedule, to be incorporated into the registration statement on Form S-1/F-1 filed in connection with the initial public offering (IPO)",
     "财政报表年度性和季度性审查": " Prepare the annual financial statements and quarterly review (20-F, 6K, 10-K and 10-Q)",
     "塞班斯": "Provide Sarbanes-Oxley compliance services",
     "帮助公司遵守并遵守美国证券交易委员会的法规": "Help companies comply with and follow the regulations of the U.S. Securities and Exchange Commission",
@@ -86,7 +86,6 @@ var lange = {
     "咨询内容": "Consultation content",
     "提交": "Submit",
     "地址": "LA office",
-    // "电话": "电话",
     "官网": "Official Website",
     "美国总部地址":"U.S. office：21660 E Copley Drive, Suite 268 Diamond Bar, CA 91765",
     "中国办公室地址":"China office:  湖南省长沙市岳麓区万为科技产业园1栋303室",
@@ -108,7 +107,6 @@ var lange = {
     "守信":"Integrity",
     "创新":"Innovative",
     "洞察":"Insights",
-    // "责任":"Responsibility",
     "信赖":"Trustworthy",
     
     
