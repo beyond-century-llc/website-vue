@@ -87,7 +87,7 @@ var lange = {
     "提交": "Submit",
     "地址": "LA office",
     "官网": "Official Website",
-    "美国总部地址":"U.S. office：21660 E Copley Drive, Suite 268 Diamond Bar, CA 91765",
+    "美国总部地址":"U.S. office：21660 E Copley Drive Suite 268, Diamond Bar, CA 91765",
     "中国办公室地址":"China office:  湖南省长沙市岳麓区金茂广场北塔写字楼1309室",
     "版权所有":"Copyright ©2024 Beyond Century Consulting, LLC. All Rights Reserved.",
     "从细节开始": "Starting from the details, serve every enterprise well",
