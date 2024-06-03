@@ -4,5 +4,6 @@ const messages = {
   "en-US":en,
   'zh-CN':zhCN,
 }
+
 export default messages
 
