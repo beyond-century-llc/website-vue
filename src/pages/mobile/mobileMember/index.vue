@@ -86,16 +86,13 @@
                         </div>
                     </div>
                 </slider-item>
-                <slider-item>
+                <!-- <slider-item>
                     <div class="item">
                         <div class="memberImg">
                             <img src="./../../../assets/headerImg/xiajia.png" alt="" />
                         </div>
                         <div class="memberName">
-                            <!-- <div class="name">
-                                <img src="./../../../assets/headerImg/xiajia.png" alt="" />
-                                <p>夏佳 Jia Xia, CPA</p>
-                            </div> -->
+                            
                             <div class="name">
                                 <img src="./../../../assets/headerImg/xiajia.png" alt="" style="float: left;" />
                                 <div style="float: left;">
@@ -105,14 +102,11 @@
                             </div>
                             <div class="introduce">
                                 {{$t('xiajia')}}
-                                <!-- ...
-                                 <span class="more">
-                                     {{$t('点击阅读全文')}}
-                                 </span> -->
+                                
                             </div>
                         </div>
                     </div>
-                </slider-item>
+                </slider-item> -->
 
             </slider>
 
