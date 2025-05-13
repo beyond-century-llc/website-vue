@@ -62,16 +62,13 @@
                     </div>
                 </slider-item>
                 
-                <slider-item>
+               <!-- <slider-item>
                     <div class="item">
                         <div class="memberImg">
                             <img src="./../../../assets/headerImg/Miranda-Suen.png" alt="" />
                         </div>
                         <div class="memberName">
-                            <!-- <div class="name">
-                                <img src="./../../../assets/headerImg/Miranda-Suen.png" alt="" />
-                                <p>Miranda Sun, CPA</p>
-                            </div> -->
+                            
                             <div class="name">
                                 <img src="./../../../assets/headerImg/Miranda-Suen.png" alt="" style="float: left;" />
                                 <div style="float: left;">
@@ -85,8 +82,8 @@
                             </div>
                         </div>
                     </div>
-                </slider-item>
-                <!-- <slider-item>
+                </slider-item> -->
+                <slider-item>
                     <div class="item">
                         <div class="memberImg">
                             <img src="./../../../assets/headerImg/xiajia.png" alt="" />
@@ -106,7 +103,7 @@
                             </div>
                         </div>
                     </div>
-                </slider-item> -->
+                </slider-item>
 
             </slider>
 

@@ -84,20 +84,20 @@
                         duties:"Partner"
                     },
                     
-                    {
-                        id: 3,
-                        name: "Miranda Sun, CPA",
-                        headerImg: require('./../../../assets/headerImg/Miranda-Suen.png'),
-                        info: this.$t('Miranda'),
-                        duties:"Partner"
-                    },
                     // {
-                    //     id: 2,
-                    //     name: "夏佳 Jia Xia, CPA",
-                    //     headerImg: require('./../../../assets/headerImg/xiajia.png'),
-                    //     info: this.$t('xiajia'),
-                    //     duties:"Director"
+                    //     id: 3,
+                    //     name: "Miranda Sun, CPA",
+                    //     headerImg: require('./../../../assets/headerImg/Miranda-Suen.png'),
+                    //     info: this.$t('Miranda'),
+                    //     duties:"Partner"
                     // },
+                    {
+                        id: 2,
+                        name: "夏佳 Jia Xia, CPA",
+                        headerImg: require('./../../../assets/headerImg/xiajia.png'),
+                        info: this.$t('xiajia'),
+                        duties:"Director"
+                    },
                     {
                         id: 4,
                         name: "Raymond Choy, CPA, CGMA",
@@ -124,17 +124,18 @@
                 this.showInfo = this.slides[this.activeIndex]
                 let info = '';
 
-                switch (this.activeIndex) {
+                switch (temp) {
                     case 0:
                         info = this.$t('Susan')
                         break;
-                    case 2:
+                    // case 1:
+                    //     info = this.$t('Miranda')
+                    //     break;
+                    case 1:
                         info = this.$t('xiajia')
                         break;
-                    case 1:
-                        info = this.$t('Miranda')
-                        break;
-                    case 3:
+                   
+                    case 2:
                         info = this.$t('Raymond')
                         break;
                     default:
@@ -152,18 +153,19 @@
                 // console.log('4444', this.slides[temp])
                 this.showInfo = this.slides[temp]
                 let info = '';
-                console.log('4444', this.showInfo)
+                // console.log('4444', this.showInfo)
                 switch (temp) {
                     case 0:
                         info = this.$t('Susan')
                         break;
-                    case 2:
+                    // case 1:
+                    //     info = this.$t('Miranda')
+                    //     break;
+                    case 1:
                         info = this.$t('xiajia')
                         break;
-                    case 1:
-                        info = this.$t('Miranda')
-                        break;
-                    case 3:
+                   
+                    case 2:
                         info = this.$t('Raymond')
                         break;
                     default:
