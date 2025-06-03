@@ -84,20 +84,20 @@
                         duties:"Partner"
                     },
                     
-                    // {
-                    //     id: 3,
-                    //     name: "Miranda Sun, CPA",
-                    //     headerImg: require('./../../../assets/headerImg/Miranda-Suen.png'),
-                    //     info: this.$t('Miranda'),
-                    //     duties:"Partner"
-                    // },
                     {
-                        id: 2,
-                        name: "夏佳 Jia Xia, CPA",
-                        headerImg: require('./../../../assets/headerImg/xiajia.png'),
-                        info: this.$t('xiajia'),
-                        duties:"Director"
+                        id: 3,
+                        name: "Miranda Sun, CPA",
+                        headerImg: require('./../../../assets/headerImg/Miranda-Suen.png'),
+                        info: this.$t('Miranda'),
+                        duties:"Partner"
                     },
+                    // {
+                    //     id: 2,
+                    //     name: "夏佳 Jia Xia, CPA",
+                    //     headerImg: require('./../../../assets/headerImg/xiajia.png'),
+                    //     info: this.$t('xiajia'),
+                    //     duties:"Director"
+                    // },
                     {
                         id: 4,
                         name: "Raymond Choy, CPA, CGMA",
@@ -118,66 +118,53 @@
         },
         watch: {
             '$i18n.locale'(newLocale) {
-                // 在这里编写语言切换后需要执行的逻辑
-                // this.activeIndex = temp;
+                const currentMember = this.slides[this.activeIndex];
+                if (!currentMember) return;
                 
-                this.showInfo = this.slides[this.activeIndex]
-                let info = '';
-
-                switch (temp) {
-                    case 0:
-                        info = this.$t('Susan')
-                        break;
-                    // case 1:
-                    //     info = this.$t('Miranda')
-                    //     break;
-                    case 1:
-                        info = this.$t('xiajia')
-                        break;
-                   
-                    case 2:
-                        info = this.$t('Raymond')
-                        break;
-                    default:
-                        break;
-                }
-                // console.log(info, 'info')
-                this.showInfo.info = info
-                // 如果有其他组件或页面也依赖于语言切换，则可能还需要更新相关内容
+                this.showInfo = currentMember;
+                this.showInfo.info = this.getMemberInfo(this.activeIndex);
                 this.$forceUpdate();
             }
         },
         methods: {
-            onSlideChange(temp) {
-                this.activeIndex = temp;
-                // console.log('4444', this.slides[temp])
-                this.showInfo = this.slides[temp]
+            getMemberInfo(index) {
+                const member = this.slides[index];
+                if (!member) return '';
+                
                 let info = '';
-                // console.log('4444', this.showInfo)
-                switch (temp) {
-                    case 0:
+                switch (member.id) {
+                    case 1:
                         info = this.$t('Susan')
                         break;
-                    // case 1:
-                    //     info = this.$t('Miranda')
-                    //     break;
-                    case 1:
+                    case 3:
+                        info = this.$t('Miranda')
+                        break;
+                    case 2:
                         info = this.$t('xiajia')
                         break;
-                   
-                    case 2:
+                    case 4:
                         info = this.$t('Raymond')
                         break;
                     default:
                         break;
                 }
-                // console.log(info, 'info', temp)
-                this.showInfo.info = info
-                // this.$emit('getData', this.list[temp].title)
+                return info;
+            },
+
+            onSlideChange(temp) {
+                this.activeIndex = temp;
+                const currentMember = this.slides[temp];
+                if (!currentMember) return;
+                
+                this.showInfo = currentMember;
+                this.showInfo.info = this.getMemberInfo(temp);
             },
 
             slideNext() {
                 let nextIndex = this.activeIndex + 1;
+                if (nextIndex >= this.slides.length) {
+                    nextIndex = 0;
+                }
                 this.$refs.carousel.goSlide(nextIndex);
             },
         },

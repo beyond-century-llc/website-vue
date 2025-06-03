@@ -43,10 +43,10 @@
                             <img src="./../../../assets/headerImg/Raymond-Choy.png" alt="" />
                         </div>
                         <div class="memberName">
-                            <!-- <div class="name">
+                            <div class="name">
                                 <img src="./../../../assets/headerImg/Raymond-Choy.png" alt="" />
                                 <p>Raymond Choy,CPA, CGMA</p>
-                            </div> -->
+                            </div>
                             <div class="name">
                                 <img src="./../../../assets/headerImg/Raymond-Choy.png" alt="" style="float: left;" />
                                 <div style="float: left;">
@@ -62,7 +62,7 @@
                     </div>
                 </slider-item>
                 
-               <!-- <slider-item>
+               <slider-item>
                     <div class="item">
                         <div class="memberImg">
                             <img src="./../../../assets/headerImg/Miranda-Suen.png" alt="" />
@@ -82,7 +82,7 @@
                             </div>
                         </div>
                     </div>
-                </slider-item> -->
+                </slider-item>
                 <slider-item>
                     <div class="item">
                         <div class="memberImg">

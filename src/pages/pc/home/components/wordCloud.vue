@@ -21,16 +21,10 @@
         },
         watch: {
             '$i18n.locale'(newLocale) {
-                // 在这里编写语言切换后需要执行的逻辑
-                // this.activeIndex = temp;
-               // this.chart.clear(); 
-               // this.chart.dispose(); 
-                setTimeout(() => {
+                this.$nextTick(() => {
                     this.show(1)
+                    this.$forceUpdate();
                 })
-                
-                // 如果有其他组件或页面也依赖于语言切换，则可能还需要更新相关内容
-                this.$forceUpdate();
             }
         },
         mounted() {
@@ -93,22 +87,6 @@
                           
                     this.$t('能力'), this.$t('可靠'), this.$t('热爱'), this.$t('勤勉'), this.$t('优质'), this.$t('诚实'),
                      this.$t('责任'), this.$t('准确'),
-                    this.$t('能力'), this.$t('可靠'), this.$t('热爱'), this.$t('勤勉'), this.$t('优质'), this.$t('诚实'),
-                     this.$t('责任'), this.$t('准确'),
-                    this.$t('能力'), this.$t('可靠'), this.$t('热爱'), this.$t('勤勉'), this.$t('优质'), this.$t('诚实'),
-                     this.$t('责任'), this.$t('准确'),
-                    this.$t('能力'), this.$t('可靠'), this.$t('热爱'), this.$t('勤勉'), this.$t('优质'), this.$t('诚实'),
-                    this.$t('超越卓越'),this.$t('超越卓越'),this.$t('超越卓越'),this.$t('超越卓越'),this.$t('超越卓越'),this.$t('超越卓越'),
-                    this.$t('超越卓越'),this.$t('超越卓越'),this.$t('超越卓越'),this.$t('超越卓越'),
-                    this.$t('超越卓越'),
-                    this.$t('能力'), this.$t('可靠'), this.$t('热爱'), this.$t('勤勉'), this.$t('优质'), this.$t('诚实'),
-                     this.$t('责任'), this.$t('准确'),
-                    this.$t('能力'), this.$t('可靠'), this.$t('热爱'), this.$t('勤勉'), this.$t('优质'), this.$t('诚实'),
-                     this.$t('责任'), this.$t('准确'),
-                    this.$t('能力'), this.$t('可靠'), this.$t('热爱'), this.$t('勤勉'), this.$t('优质'), this.$t('诚实'),
-                    this.$t('超越卓越'),this.$t('超越卓越'),this.$t('超越卓越'),this.$t('超越卓越'),this.$t('超越卓越'),this.$t('超越卓越'),
-                    this.$t('超越卓越'),this.$t('超越卓越'),this.$t('超越卓越'),this.$t('超越卓越'),
-                    this.$t('超越卓越'),
                     this.$t('能力'), this.$t('可靠'), this.$t('热爱'), this.$t('勤勉'), this.$t('优质'), this.$t('诚实'),
                      this.$t('责任'), this.$t('准确'),
                     this.$t('能力'), this.$t('可靠'), this.$t('热爱'), this.$t('勤勉'), this.$t('优质'), this.$t('诚实'),
